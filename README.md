@@ -1,4 +1,4 @@
-** IN PRODUCTION **
+**IN PRODUCTION**
 
 # React Portfolio
 A portfolio built using React, compiled by Webpack.

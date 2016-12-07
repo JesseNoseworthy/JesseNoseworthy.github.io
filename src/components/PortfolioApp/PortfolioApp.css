@@ -1,6 +1,3 @@
-.redBg {
-    background-color: blue;
-    border-radius: 5px;
-    color: white;
-    padding: 5px;
+:local(.app) {
+  background: red;
 }

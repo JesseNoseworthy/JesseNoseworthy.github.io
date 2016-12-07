@@ -1,3 +1,7 @@
-:local(.app) {
-  background: red;
+.PortfolioApp {
+  background: #ccc;
+}
+
+.tes {
+  color: green;
 }

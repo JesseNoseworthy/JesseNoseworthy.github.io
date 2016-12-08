@@ -11,7 +11,7 @@ class Link extends Component {
     } = this.props;
 
     return (
-      <a href={href} {...others}>
+      <a className={variant} href={href} {...others}>
         {children}
       </a>
     );

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import styles from './Link.css';
 
 class Link extends Component {
@@ -17,5 +17,11 @@ class Link extends Component {
     );
   }
 }
+
+Link.propTypes = {
+  href: React.PropTypes.string,
+  children: React.PropTypes.any,
+  variant: React.PropTypes.string,
+};
 
 export default Link;

@@ -1,4 +1,4 @@
-### IN PRODUCTION
+### Heads up: This project is currently in *development*
 -
 # React Portfolio
 A portfolio built using React, compiled by Webpack.
@@ -25,6 +25,8 @@ Your browser should automatically open to `http://localhost:3000/`
 
 ```
 npm run build
+
+```
 
 ### Structure of a component 
 

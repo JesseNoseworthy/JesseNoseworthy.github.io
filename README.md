@@ -1,7 +1,5 @@
-# IN PRODUCTION
-
+### IN PRODUCTION
 -
-
 # React Portfolio
 A portfolio built using React, compiled by Webpack.
 
@@ -27,7 +25,46 @@ Your browser should automatically open to `http://localhost:3000/`
 
 ```
 npm run build
+
+### Structure of a component 
+
+The majority of core-development should be completed from with `../src/components`. If there is a sequence of code that may be used in more than one location, it would probably be best served as being its own component. 
+
+Components are stored in a folder, where there will be an `index.js` and `[component-name].css` file. The `Link` component is a pretty bare-bones example of the required structure:
+
+`index.js`
+
 ```
+import React, { Component, PropTypes } from 'react';
+import styles from './Link.css';
+
+class Link extends Component {
+  render() {
+    const { 
+      href,
+      children,
+      variant,
+      ...others
+    } = this.props;
+
+    return (
+      <a className={variant} href={href} {...others}>
+        {children}
+      </a>
+    );
+  }
+}
+
+Link.propTypes = {
+  href: React.PropTypes.string,
+  children: React.PropTypes.any,
+  variant: React.PropTypes.string,
+};
+
+export default Link;
+```
+
+And from within `./Link.css` we can write any custom styling.
 
 ### Eslint
 There is a .eslint.yaml config for eslint ready with React plugin.
@@ -42,10 +79,6 @@ To do the actual linting, run:
 ```
 npm run lint
 ```
-
-### Notes on importing css styles
-* styles having /src/ in their absolute path are considered part of the application and exported as local css modules.
-* other styles are considered global styles used by many components and are included in the css bundle directly.
 
 ### Credits 
 

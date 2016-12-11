@@ -15,4 +15,8 @@ class Image extends Component {
   }
 }
 
+Image.propTypes = {
+  variant: React.PropTypes.string,
+};
+
 export default Image;

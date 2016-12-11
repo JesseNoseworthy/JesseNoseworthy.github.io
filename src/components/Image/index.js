@@ -10,7 +10,7 @@ class Image extends Component {
     } = this.props;
 
     return (
-      <img className={styles.variant} {...others} />
+      <img className={styles[variant]} {...others} />
     );
   }
 }

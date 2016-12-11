@@ -1,0 +1,13 @@
+.heroContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  color: white;
+}

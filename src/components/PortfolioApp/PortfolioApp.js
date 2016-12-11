@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './PortfolioApp.css';
+import globalStyles from '../../globalStyles/index.css';
 import Image from '../Image';
 import Link from '../Link';
 import Button from '../Button';

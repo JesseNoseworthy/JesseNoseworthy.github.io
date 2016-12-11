@@ -25,7 +25,6 @@ Your browser should automatically open to `http://localhost:3000/`
 
 ```
 npm run build
-
 ```
 
 ### Structure of a component 

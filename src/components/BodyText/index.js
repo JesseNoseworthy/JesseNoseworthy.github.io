@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './BodyText.css';
+import styles from './BodyText.scss';
 
 class BodyText extends Component {
   render() {

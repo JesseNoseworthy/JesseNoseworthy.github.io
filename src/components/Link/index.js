@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import styles from './Link.css';
+import styles from './Link.scss';
 
 class Link extends Component {
   render() {

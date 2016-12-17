@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Hero.css';
+import styles from './Hero.scss';
 import Image from '../Image';
 import Link from '../Link';
 import Button from '../Button';

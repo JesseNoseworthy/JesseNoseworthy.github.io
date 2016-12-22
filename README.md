@@ -49,7 +49,7 @@ class Link extends Component {
     } = this.props;
 
     return (
-      <a className={variant} href={href} {...others}>
+      <a className={styles[variant]} href={href} {...others}>
         {children}
       </a>
     );

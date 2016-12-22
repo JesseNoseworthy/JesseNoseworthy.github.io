@@ -11,7 +11,7 @@ class PortfolioApp extends Component {
       { type: "GitHub", socialUrl: "https://github.com/JesseNoseworthy" },
       { type: "Twitter", socialUrl: "https://twitter.com/JesseNoseworthy" },
       { type: "Medium", socialUrl: "https://medium.com/@JesseNoseworthy" },
-      { type: "mail", socialUrl: "mailto:noseworthyjesse@gmail.com" }
+      { type: "email", socialUrl: "mailto:noseworthyjesse@gmail.com" }
     ] 
     return (
       <div className={styles.PortfolioApp}>

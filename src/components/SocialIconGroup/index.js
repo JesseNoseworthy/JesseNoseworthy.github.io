@@ -15,7 +15,7 @@ class SocialIconGroup extends Component {
     return (
       <div {...others}>
         {socialMediaAccounts.map(function(name, i){
-          const getSocialType = socialMediaAccounts[i].type == 'mail' ? 'envelope' : socialMediaAccounts[i].type;
+          const getSocialType = socialMediaAccounts[i].type == 'email' ? 'envelope' : socialMediaAccounts[i].type;
           return (
             <SocialIcon 
               key={i}

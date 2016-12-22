@@ -1,0 +1,20 @@
+{
+  "socialMedia": {
+    "GitHub": { 
+      "type": "GitHub",
+      "socialUrl": "https://github.com/JesseNoseworthy" 
+    },
+    "Twitter": { 
+      "type": "Twitter",
+      "socialUrl": "https://twitter.com/JesseNoseworthy"
+    },
+    "Medium": { 
+      "type": "Medium",
+      "socialUrl": "https://medium.com/@JesseNoseworthy"
+    },
+    "email": { 
+      "type": "email",
+      "socialUrl": "mailto:noseworthyjesse@gmail.com"
+    }
+  }
+}

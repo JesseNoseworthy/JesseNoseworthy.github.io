@@ -7,26 +7,29 @@ import classNames from 'classnames';
 import SocialIcon from '../SocialIcon';
 
 class SocialIconGroup extends Component {
+
+  // This is currently broken due to the following error:
+  // "Objects are not valid as a React child"
+
   render() {
     const {
       socialMediaAccounts,
       ...others
     } = this.props;
-    return (
-      <div {...others}>
-        {socialMediaAccounts.map(function(name, i){
-          const getSocialType = socialMediaAccounts[i].type == 'email' ? 'envelope' : socialMediaAccounts[i].type;
-          return (
-            <SocialIcon 
-              key={i}
-              iconType={getSocialType}
-              socialUrl={socialMediaAccounts[i].socialUrl}
-              iconSize='2x'
-            />
-          );
-        })}
-      </div>
-    )
+        return (
+          <div>
+            {_.forEach(socialMediaAccounts, function (article) {
+              const getSocialType = article.type == 'email' ? 'envelope' : article.type;
+              return (
+                <SocialIcon 
+                  iconType={getSocialType}
+                  socialUrl={article.socialUrl}
+                  iconSize='2x'
+                />
+              );
+            })}
+          </div>
+        )
   }
 }
 

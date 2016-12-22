@@ -8,16 +8,14 @@ class PortfolioApp extends Component {
   render() {
 
     const socialMediaAccounts = [
-      { socialMediaOutlet: "GitHub", socialUrl: "https://github.com/JesseNoseworthy" },
-      { socialMediaOutlet: "Twitter", socialUrl: "https://twitter.com/JesseNoseworthy" },
-      { socialMediaOutlet: "Medium", socialUrl: "https://medium.com/@JesseNoseworthy" },
-      { socialMediaOutlet: "Gmail", socialUrl: "mailto:noseworthyjesse@gmail.com"  }
+      { type: "GitHub", socialUrl: "https://github.com/JesseNoseworthy" },
+      { type: "Twitter", socialUrl: "https://twitter.com/JesseNoseworthy" },
+      { type: "Medium", socialUrl: "https://medium.com/@JesseNoseworthy" },
+      { type: "mail", socialUrl: "mailto:noseworthyjesse@gmail.com" }
     ] 
     return (
       <div className={styles.PortfolioApp}>
-        <Hero />
-        <SocialIconGroup 
-          socialMediaAccounts={socialMediaAccounts} />
+        <SocialIconGroup socialMediaAccounts={socialMediaAccounts} />
       </div>
     )
   }

@@ -7,40 +7,19 @@ import classNames from 'classnames';
 import SocialIcon from '../SocialIcon';
 
 class SocialIconGroup extends Component {
-  // getSocialAccounts(socialMediaAccounts) {
-  //   return (
-  //     {socialMediaAccounts.map(function(name, i){
-  //       return (
-  //         <SocialIcon 
-  //           key={i}
-  //           iconType={socialMediaAccounts[i].socialMediaOutlet}
-  //           socialUrl={socialMediaAccounts[i].socialUrl}
-  //           iconSize='2x'
-  //         />
-  //       );
-  //     })}
-  //   )
-  // };
   render() {
     const {
       socialMediaAccounts,
       ...others
     } = this.props;
-
     return (
       <div {...others}>
-        <h1>SocialIconGroup</h1>
-        <SocialIcon 
-          socialUrl="https://github.com"
-          iconType="facebook"
-          iconSize='2x'
-        />
         {socialMediaAccounts.map(function(name, i){
+          const getSocialType = socialMediaAccounts[i].type == 'mail' ? 'envelope' : socialMediaAccounts[i].type;
           return (
             <SocialIcon 
               key={i}
-              // iconType={socialMediaAccounts[i].socialMediaOutlet}
-              iconType="test"
+              iconType={getSocialType}
               socialUrl={socialMediaAccounts[i].socialUrl}
               iconSize='2x'
             />

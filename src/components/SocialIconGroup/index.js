@@ -7,19 +7,45 @@ import classNames from 'classnames';
 import SocialIcon from '../SocialIcon';
 
 class SocialIconGroup extends Component {
-  getSocialAccounts(social) {
-    // Loop through {social} and output an icon for each
-  }
+  // getSocialAccounts(socialMediaAccounts) {
+  //   return (
+  //     {socialMediaAccounts.map(function(name, i){
+  //       return (
+  //         <SocialIcon 
+  //           key={i}
+  //           iconType={socialMediaAccounts[i].socialMediaOutlet}
+  //           socialUrl={socialMediaAccounts[i].socialUrl}
+  //           iconSize='2x'
+  //         />
+  //       );
+  //     })}
+  //   )
+  // };
   render() {
     const {
-      social,
+      socialMediaAccounts,
       ...others
     } = this.props;
 
     return (
       <div {...others}>
         <h1>SocialIconGroup</h1>
-        {this.getSocialAccounts(social)}
+        <SocialIcon 
+          socialUrl="https://github.com"
+          iconType="facebook"
+          iconSize='2x'
+        />
+        {socialMediaAccounts.map(function(name, i){
+          return (
+            <SocialIcon 
+              key={i}
+              // iconType={socialMediaAccounts[i].socialMediaOutlet}
+              iconType="test"
+              socialUrl={socialMediaAccounts[i].socialUrl}
+              iconSize='2x'
+            />
+          );
+        })}
       </div>
     )
   }

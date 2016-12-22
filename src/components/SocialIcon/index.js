@@ -20,7 +20,7 @@ class SocialIcon extends Component {
       <Link href={socialUrl} {...others}>
         <FontAwesome
           className={iconClass}
-          name={iconType}
+          name={iconType.toLowerCase()}
           size={iconSize}
          />
       </Link>

@@ -20,7 +20,7 @@ class SocialIcon extends Component {
       <Link href={socialUrl} {...others}>
         <FontAwesome
           className={iconClass}
-          name={iconType}
+          name={iconType.toLowerCase()}
           size={iconSize}
          />
       </Link>
@@ -29,7 +29,7 @@ class SocialIcon extends Component {
 }
 
 SocialIcon.propTypes = {
-  socailUrl: React.PropTypes.string,
+  socialUrl: React.PropTypes.string,
   variant: React.PropTypes.string,
   iconType: React.PropTypes.string.isRequired,
   iconSize: React.PropTypes.any,

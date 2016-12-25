@@ -33,7 +33,7 @@
     camelcase: 0
     no-spaced-func: 1
     no-alert: 1
-    eol-last: 1
+    eol-last: 0
     comma-spacing: 1
     eqeqeq: 1
 

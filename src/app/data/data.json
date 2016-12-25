@@ -1,4 +1,8 @@
-  {
+// All global application data will be stored here
+// The goal down the road will be to move this over to 
+// A CMS-based application and parse the JSON in a similar way
+
+{
   "socialMedia": {
     "GitHub": { 
       "type": "GitHub",

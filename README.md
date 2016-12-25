@@ -67,6 +67,22 @@ export default Link;
 
 And from within `./Link.css` we can write any custom styling.
 
+### Importing images 
+
+When utilizing local images, "require" is needed to find the image locally. 
+
+To do so, wrap the `src` in curly braces, type "require", add in parenthesis and then link to the local image.
+
+For example:
+
+```
+<Image src={require("../../app/assets/headshot.jpg")} />
+```
+
+This line of code will output `headshot.jpg` as expected. 
+
+See the [React Native documentation](https://facebook.github.io/react-native/docs/images.html) for more.
+
 ### Eslint
 There is a .eslint.yaml config for eslint ready with React plugin.
 To use it, you need to install additional dependencies though:

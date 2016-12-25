@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './PortfolioApp.scss';
-import globalStyles from '../../globalStyles/index.scss';
+import '../../globalStyles/index.scss';
 import SocialIconGroup from '../SocialIconGroup';
 import appData from '../../app/data/data.json';
 

@@ -12,21 +12,21 @@ class SocialIconGroup extends Component {
       socialMediaAccounts,
       ...others
     } = this.props;
-    return (
-      <div {...others}>
-        {socialMediaAccounts.map(function(name, i){
-          const getSocialType = socialMediaAccounts[i].type == 'email' ? 'envelope' : socialMediaAccounts[i].type;
-          return (
-            <SocialIcon 
-              key={i}
-              iconType={getSocialType}
-              socialUrl={socialMediaAccounts[i].socialUrl}
-              iconSize='2x'
-            />
-          );
-        })}
-      </div>
-    )
+        return (
+          <div>
+            {Object.keys(socialMediaAccounts).map(function(i) {
+              const getSocialType = socialMediaAccounts[i].type == 'email' ? 'envelope' : socialMediaAccounts[i].type;
+              return (
+                <SocialIcon 
+                  key={i}
+                  iconType={getSocialType}
+                  socialUrl={socialMediaAccounts[i].socialUrl}
+                  iconSize='2x'
+                />
+              )
+            })}
+          </div>
+        )
   }
 }
 

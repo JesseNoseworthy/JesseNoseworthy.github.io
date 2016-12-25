@@ -5,6 +5,10 @@ module.exports = [
 		loader: "babel"
 	},
 	{
+   test: /\.json$/,
+   loader: 'json-loader'
+	 },
+	{
 		test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
 		exclude: /(node_modules|bower_components)/,
 		loader: "file"

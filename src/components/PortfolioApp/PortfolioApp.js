@@ -3,19 +3,15 @@ import styles from './PortfolioApp.scss';
 import globalStyles from '../../globalStyles/index.scss';
 import Hero from '../Hero';
 import SocialIconGroup from '../SocialIconGroup';
+import appData from '../../app/data/data.json';
 
 class PortfolioApp extends Component {
   render() {
-
-    const socialMediaAccounts = [
-      { type: "GitHub", socialUrl: "https://github.com/JesseNoseworthy" },
-      { type: "Twitter", socialUrl: "https://twitter.com/JesseNoseworthy" },
-      { type: "Medium", socialUrl: "https://medium.com/@JesseNoseworthy" },
-      { type: "email", socialUrl: "mailto:noseworthyjesse@gmail.com" }
-    ] 
     return (
       <div className={styles.PortfolioApp}>
-        <SocialIconGroup socialMediaAccounts={socialMediaAccounts} />
+        <SocialIconGroup 
+          socialMediaAccounts={appData.socialMedia}
+        />
       </div>
     )
   }

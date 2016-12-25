@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styles from './Hero.scss';
 import Image from '../Image';
 import Link from '../Link';
-import Button from '../Button';
 import BodyText from '../BodyText';
 
 class Hero extends Component {

@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import styles from './Link.scss';
 
 class Link extends Component {
@@ -11,7 +11,7 @@ class Link extends Component {
     } = this.props;
 
     return (
-      <a className={variant} href={href} {...others}>
+      <a className={styles[variant]} href={href} {...others}>
         {children}
       </a>
     );

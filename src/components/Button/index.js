@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import styles from './Button.scss';
 
 class Button extends Component {
@@ -10,7 +10,7 @@ class Button extends Component {
     } = this.props;
 
     return (
-      <button className={variant} {...others}>
+      <button className={styles[variant]} {...others}>
         {children}
       </button>
     );

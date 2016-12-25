@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import styles from './PortfolioApp.scss';
 import '../../globalStyles/index.scss';
-import SocialIconGroup from '../SocialIconGroup';
+import Hero from '../Hero';
 import appData from '../../app/data/data.json';
 
 class PortfolioApp extends Component {
   render() {
     return (
       <div className={styles.PortfolioApp}>
-        <SocialIconGroup 
-          socialMediaAccounts={appData.socialMedia}
-        />
+        <Hero />
       </div>
     )
   }

@@ -18,15 +18,15 @@ class SocialIconGroup extends Component {
     } = this.props;
         return (
           <div>
-            {_.forEach(socialMediaAccounts, function (article) {
-              const getSocialType = article.type == 'email' ? 'envelope' : article.type;
+            {Object.keys(socialMediaAccounts).map(function(i) {
+              const getSocialType = socialMediaAccounts[i].type == 'email' ? 'envelope' : socialMediaAccounts[i].type;
               return (
                 <SocialIcon 
                   iconType={getSocialType}
-                  socialUrl={article.socialUrl}
+                  socialUrl={socialMediaAccounts[i].socialUrl}
                   iconSize='2x'
                 />
-              );
+              )
             })}
           </div>
         )

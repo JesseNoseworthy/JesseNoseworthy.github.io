@@ -71,7 +71,7 @@ And from within `./Link.css` we can write any custom styling.
 
 When utilizing local images, "require" is needed to find the image locally. 
 
-To do so, wrap the `src` in curly braces, type "require", add in parenthesis and then link to the local image.
+To do so, wrap the `src` in curly braces, type "require", add in parenthesis and then add in the path to the local image.
 
 For example:
 

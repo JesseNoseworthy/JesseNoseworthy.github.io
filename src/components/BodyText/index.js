@@ -7,11 +7,12 @@ class BodyText extends Component {
       title, 
       subTitle, 
       content,
+      variant,
       ...others
     } = this.props
 
     return (
-      <div className={styles.BodyText} {...others}>
+      <div className={styles.bodyText, styles[variant]} {...others}>
         { title ? <h1>{title}</h1> : null}
         { subTitle ? <h2>{subTitle}</h2> : null}
         { content ? <p>{content}</p> : null}

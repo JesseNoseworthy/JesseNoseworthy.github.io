@@ -7,10 +7,11 @@ import SocialIcon from '../SocialIcon';
 class SocialIconGroup extends Component {
   render() {
     const {
-      socialMediaAccounts
+      socialMediaAccounts,
+      ...others
     } = this.props;
         return (
-          <div className={styles.SocialIconGroup}>
+          <div className={styles.SocialIconGroup} {...others}>
             {Object.keys(socialMediaAccounts).map(function(i) {
               const getSocialType = socialMediaAccounts[i].type === 'email' ? 'envelope' : socialMediaAccounts[i].type;
               return (

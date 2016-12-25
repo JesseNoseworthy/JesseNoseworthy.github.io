@@ -1,9 +1,7 @@
 // This component will render a FaceBook, Twitter, LinkedIn, and GitHub icon
 
 import React, { Component } from 'react';
-import { map, trim } from 'lodash';
 import styles from './SocialIconGroup.scss';
-import classNames from 'classnames';
 import SocialIcon from '../SocialIcon';
 
 class SocialIconGroup extends Component {
@@ -13,9 +11,9 @@ class SocialIconGroup extends Component {
       ...others
     } = this.props;
         return (
-          <div>
+          <div className={styles.SocialIconGroup} {...others}>
             {Object.keys(socialMediaAccounts).map(function(i) {
-              const getSocialType = socialMediaAccounts[i].type == 'email' ? 'envelope' : socialMediaAccounts[i].type;
+              const getSocialType = socialMediaAccounts[i].type === 'email' ? 'envelope' : socialMediaAccounts[i].type;
               return (
                 <SocialIcon 
                   key={i}
@@ -29,5 +27,13 @@ class SocialIconGroup extends Component {
         )
   }
 }
+
+SocialIconGroup.propTypes = {
+  socialMediaAccounts: React.PropTypes.object
+};
+
+SocialIconGroup.defaultTypes = {
+  socialMediaAccounts: {}
+};
 
 export default SocialIconGroup;

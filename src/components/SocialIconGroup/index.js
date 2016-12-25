@@ -7,10 +7,6 @@ import classNames from 'classnames';
 import SocialIcon from '../SocialIcon';
 
 class SocialIconGroup extends Component {
-
-  // This is currently broken due to the following error:
-  // "Objects are not valid as a React child"
-
   render() {
     const {
       socialMediaAccounts,

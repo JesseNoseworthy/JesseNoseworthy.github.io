@@ -22,6 +22,7 @@ class SocialIconGroup extends Component {
               const getSocialType = socialMediaAccounts[i].type == 'email' ? 'envelope' : socialMediaAccounts[i].type;
               return (
                 <SocialIcon 
+                  key={i}
                   iconType={getSocialType}
                   socialUrl={socialMediaAccounts[i].socialUrl}
                   iconSize='2x'

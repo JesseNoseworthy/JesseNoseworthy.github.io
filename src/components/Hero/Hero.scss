@@ -3,12 +3,14 @@
 .heroContainer {
   height: 100vh;
   .content {
-    width: 60%;
     height: 100%;
-    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
     background: rgba(0,0,0,0.9);
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: 768px) {
+      width: 60%;
+      clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    }
   }
 }

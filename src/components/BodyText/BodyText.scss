@@ -1,7 +1,6 @@
 // All BodyText styles go here
 
 .hero {
-  margin-right: 25%;
   margin-bottom: 15%;
   color: white;
   line-height: 44px;
@@ -14,5 +13,9 @@
   }
   p {
     font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    margin-right: 20%;
+    margin-left: 5%;
   }
 }

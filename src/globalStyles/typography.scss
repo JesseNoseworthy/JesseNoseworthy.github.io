@@ -2,10 +2,7 @@
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3,{
   font-family: var(--header-font-family);
   letter-spacing: 1.5px;
 }
@@ -16,6 +13,9 @@ h6 {
   font-weight: lighter;
 }
 
+h4,
+h5,
+h6, 
 li,
 a,
 p,

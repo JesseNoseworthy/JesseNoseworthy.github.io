@@ -1,15 +1,21 @@
 .About {
-  height: 400px;
   width: 80%;
-  margin: 75px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   .AboutImage,
   .AboutText {
-    margin: 0 20px;
+    margin: 75px 30px;
   }
   .AboutImage {
     height: 250px;
     width: auto;
+  }
+  .AboutText {
+    border-top: 2px solid var(--muted-blue);
+    border-bottom: 2px solid var(--muted-blue);
+    h1 {
+      margin: 15px 0;
+    }
   }
 }

@@ -12,7 +12,7 @@ class Hero extends Component {
           <BodyText
             variant="hero"
             title="Jesse Noseworthy"
-            content="Front End Developer"
+            subTitle="Front End Developer"
           />
         </div>
         <Video variant="background" src={require("../../app/assets/programming.mp4")}/>

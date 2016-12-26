@@ -15,7 +15,7 @@ class BodyText extends Component {
       <div className={styles.bodyText, styles[variant]} {...others}>
         { title ? <h1>{title}</h1> : null}
         { subTitle ? <h2>{subTitle}</h2> : null}
-        { content ? <p>{content}</p> : null}
+        { content ? <h5>{content}</h5> : null}
       </div>
     )
   }

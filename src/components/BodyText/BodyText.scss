@@ -4,15 +4,9 @@
   margin-bottom: 15%;
   color: white;
   line-height: 44px;
-  h1,
-  p {
-    letter-spacing: 1.5px;
-  }
-  h1 {
-    font-size: 44px;
-  }
-  p {
-    font-size: 24px;
+
+  h5 {
+    font-family: var(--base-font-family);
   }
   @media (min-width: 768px) {
     margin-right: 20%;

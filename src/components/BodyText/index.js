@@ -29,6 +29,9 @@ BodyText.propTypes = {
   title: React.PropTypes.string,
   subTitle: React.PropTypes.string,
   content: React.PropTypes.string,
+  highlightTitle: React.PropTypes.bool,
+  highlightSubTitle: React.PropTypes.bool,
+  highlightContent: React.PropTypes.bool,
 };
 
 export default BodyText;

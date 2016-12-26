@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import styles from './Hero.scss';
 import Image from '../Image';
-import Link from '../Link';
+import Video from '../Video';
 import BodyText from '../BodyText';
 
 class Hero extends Component {
   render() {
     return (
       <div className={styles.heroContainer}>
-        <BodyText
-          title="Hello, world!"
-          content="Content"
-        />
-        <Image src={require("../../app/assets/headshot.jpg")} />
+        <div className={styles.content}>
+          <BodyText
+            variant="hero"
+            title="Hello, world!"
+            content="Content"
+          />
+        </div>
+        <Video variant="background" src={require("../../app/assets/programming.mp4")}/>
       </div>
     )
   }

@@ -1,11 +1,16 @@
 // All Hero styles go here
 
 .heroContainer {
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   height: 100vh;
+  .content {
+    width: 60%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .heroText {

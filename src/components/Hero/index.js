@@ -11,8 +11,8 @@ class Hero extends Component {
         <div className={styles.content}>
           <BodyText
             variant="hero"
-            title="Hello, world!"
-            content="Content"
+            title="Jesse Noseworthy"
+            content="Front End Developer"
           />
         </div>
         <Video variant="background" src={require("../../app/assets/programming.mp4")}/>

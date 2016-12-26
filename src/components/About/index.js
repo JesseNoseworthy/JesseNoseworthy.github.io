@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import styles from './About.scss';
+import BodyText from '../BodyText';
+import Image from '../Image';
 
 class About extends Component {
   render() {
     const { 
-      children,
-      variant,
       ...others
     } = this.props;
 
     return (
       <div className={styles.About} {...others}>
-        <h1>Hello</h1>
+        <Image className={styles.AboutImage} src={require('../../app/assets/headshot.jpg')}/>
+        <BodyText 
+          className={styles.AboutText}
+          variant="about"
+          highlightTitle={true}
+          title="About Me"
+          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque reiciendis, dignissimos similique blanditiis animi nihil. Temporibus voluptate, aliquid laborum asperiores blanditiis. Sunt deleniti alias odio voluptates, tenetur similique nemo est!"
+        />
       </div>
     );
   }

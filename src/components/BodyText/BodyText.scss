@@ -1,14 +1,9 @@
 // All BodyText styles go here
 
 .hero {
-  margin-bottom: 15%;
-  color: white;
+  color: var(--black);
   line-height: 44px;
-  
-  @media (min-width: 768px) {
-    margin-right: 20%;
-    margin-left: 5%;
-  }
+  text-align: center;
 }
 
 .highlight {

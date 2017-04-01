@@ -15,7 +15,6 @@ class Hero extends Component {
             subTitle="Front End Developer"
           />
         </div>
-        <Video variant="background" src={require("../../app/assets/programming.mp4")}/>
       </div>
     )
   }

@@ -20,6 +20,7 @@ class Video extends Component {
 }
 
 Video.propTypes = {
+  variant: PropTypes.string,
   src: PropTypes.string,
 };
 

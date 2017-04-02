@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './Hero.scss';
-import Image from '../Image';
 import NextButton from '../NextButton';
 import BodyText from '../BodyText';
 
@@ -20,5 +19,13 @@ const Hero = ({ responsiveFlags }) => (
     </div>
   </div>
 );
+
+Hero.propTypes = {
+  responsiveFlags: React.PropTypes.shape({
+    isMobile: React.PropTypes.bool,
+    isTablet: React.PropTypes.bool,
+    isDesktop: React.PropTypes.bool
+  })
+};
 
 export default Hero;

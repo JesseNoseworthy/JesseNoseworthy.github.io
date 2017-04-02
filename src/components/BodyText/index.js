@@ -36,12 +36,18 @@ class BodyText extends Component {
 }
 
 BodyText.propTypes = {
+  variant: React.PropTypes.string,
   title: React.PropTypes.string,
   subTitle: React.PropTypes.string,
   content: React.PropTypes.string,
   highlightTitle: React.PropTypes.bool,
   highlightSubTitle: React.PropTypes.bool,
   highlightContent: React.PropTypes.bool,
+  responsiveFlags: React.PropTypes.shape({
+    isMobile: React.PropTypes.bool,
+    isTablet: React.PropTypes.bool,
+    isDesktop: React.PropTypes.bool
+  })
 };
 
 export default BodyText;

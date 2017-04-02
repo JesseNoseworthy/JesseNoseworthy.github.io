@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './PortfolioApp.scss';
 import '../../globalStyles/index.scss';
 import Hero from '../Hero';
-import About from '../About';
 import appData from '../../app/data/data.json';
 import {
   isDesktop,
@@ -34,7 +33,7 @@ const PortfolioApp = React.createClass({
       isMobile
     } = this.state;
 
-    const responsiveFlags = { 
+    const responsiveFlags = {
       isDesktop,
       isTablet,
       isMobile

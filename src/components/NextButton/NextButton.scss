@@ -1,6 +1,9 @@
 .nextButton {
   display: flex;
-
+  align-items: center;
+  margin-top: 5px;
+  text-decoration: none;
+  color: var(--generic-black);
   i {
     font-size: 18px;
     display: flex;

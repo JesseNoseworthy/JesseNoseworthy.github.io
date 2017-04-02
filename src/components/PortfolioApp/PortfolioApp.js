@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import styles from './PortfolioApp.scss';
 import '../../globalStyles/index.scss';
 import Hero from '../Hero';

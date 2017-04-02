@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import styles from './BodyText.scss';
 
 class BodyText extends Component {
@@ -12,11 +13,20 @@ class BodyText extends Component {
       highlightTitle,
       highlightSubTitle,
       highlightContent,
+      responsiveFlags,
       ...others
     } = this.props
 
+    const bodyTextClassName = classNames(
+      styles.bodyText,
+      styles[variant], { 
+        'isMobile': responsiveFlags.isMobile,
+        'isTablet': responsiveFlags.isTablet,
+        'isDesktop': responsiveFlags.isDesktop
+      }
+    );
     return (
-      <div className={styles.bodyText, styles[variant]} {...others}>
+      <div className={bodyTextClassName} {...others}>
         { title ? <h1 className={highlightTitle ? styles.highlight : null}>{title}</h1> : null}
         { subTitle ? <h4 className={highlightSubTitle ? styles.highlight : null}>{subTitle}</h4> : null}
         { content ? <p className={highlightContent ? styles.highlight : null}>{content}</p> : null}

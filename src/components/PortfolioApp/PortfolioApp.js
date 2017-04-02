@@ -29,9 +29,21 @@ const PortfolioApp = React.createClass({
     window.removeEventListener('resize', this.updateDimensions);
   },
   render() {
+    const {
+      isDesktop,
+      isTablet,
+      isMobile
+    } = this.state;
+
+    const responsiveFlags = { 
+      isDesktop,
+      isTablet,
+      isMobile
+    };
+
     return (
       <div className={styles.PortfolioApp}>
-        <Hero />
+        <Hero responsiveFlags={responsiveFlags} />
       </div>
     )
   }

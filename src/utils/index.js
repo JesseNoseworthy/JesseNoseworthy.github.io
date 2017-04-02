@@ -11,11 +11,11 @@ export function getWindowHeight() {
 }
 
 export function isMobile() {
-  return getWindowWidth() < 728
+  return getWindowWidth() < 768
 };
 
 export function isTablet() {
-  return getWindowWidth() >= 728 && getWindowWidth() <= 1024
+  return getWindowWidth() >= 768 && getWindowWidth() <= 1024
 };
 
 export function isDesktop() {

@@ -10,7 +10,6 @@ class PortfolioApp extends Component {
     return (
       <div className={styles.PortfolioApp}>
         <Hero />
-        <About />
       </div>
     )
   }

@@ -18,7 +18,7 @@ class BodyText extends Component {
     return (
       <div className={styles.bodyText, styles[variant]} {...others}>
         { title ? <h1 className={highlightTitle ? styles.highlight : null}>{title}</h1> : null}
-        { subTitle ? <h5 className={highlightSubTitle ? styles.highlight : null}>{subTitle}</h5> : null}
+        { subTitle ? <h4 className={highlightSubTitle ? styles.highlight : null}>{subTitle}</h4> : null}
         { content ? <p className={highlightContent ? styles.highlight : null}>{content}</p> : null}
       </div>
     )

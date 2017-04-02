@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Hero.scss';
 import Image from '../Image';
-import Video from '../Video';
+import NextButton from '../NextButton';
 import BodyText from '../BodyText';
 
 class Hero extends Component {
@@ -14,8 +14,11 @@ class Hero extends Component {
             title="Jesse Noseworthy"
             subTitle="Front End Developer"
           />
+          <NextButton 
+            iconDirection='down' 
+            destination='#'
+          />
         </div>
-        <Video variant="background" src={require("../../app/assets/programming.mp4")}/>
       </div>
     )
   }

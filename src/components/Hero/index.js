@@ -14,7 +14,7 @@ class Hero extends Component {
             title="Jesse Noseworthy"
             subTitle="Front End Developer"
           />
-          <NextButton />
+          <NextButton iconDirection='down' />
         </div>
       </div>
     )

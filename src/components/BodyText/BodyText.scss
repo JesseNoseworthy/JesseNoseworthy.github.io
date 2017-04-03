@@ -4,6 +4,10 @@
   color: var(--generic-black);
   line-height: 44px;
   text-align: center;
+
+  &.isMobile {
+    padding: 0 10px;
+  }
 }
 
 .highlight {

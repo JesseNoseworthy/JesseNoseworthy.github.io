@@ -19,10 +19,10 @@ class BodyText extends Component {
 
     const bodyTextClassName = classNames(
       styles.bodyText,
-      styles[variant], { 
-        'isMobile': responsiveFlags.isMobile,
-        'isTablet': responsiveFlags.isTablet,
-        'isDesktop': responsiveFlags.isDesktop
+      styles[variant], {
+        [styles.isMobile]: responsiveFlags.isMobile,
+        [styles.isTablet]: responsiveFlags.isTablet,
+        [styles.isDesktop]: responsiveFlags.isDesktop
       }
     );
     return (

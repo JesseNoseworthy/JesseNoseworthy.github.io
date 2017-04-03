@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from './PortfolioApp.scss';
 import '../../globalStyles/index.scss';
-import Hero from '../Hero';
 import appData from '../../app/data/data.json';
 import {
   isDesktop,
   isTablet,
   isMobile
 } from '../../utils';
+import Hero from '../Hero';
+import About from '../About';
 
 const PortfolioApp = React.createClass({
   updateDimensions() {
@@ -42,6 +43,7 @@ const PortfolioApp = React.createClass({
     return (
       <div className={styles.PortfolioApp}>
         <Hero responsiveFlags={responsiveFlags} />
+        <About responsiveFlags={responsiveFlags} />
       </div>
     )
   }

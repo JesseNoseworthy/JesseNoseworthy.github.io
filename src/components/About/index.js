@@ -5,14 +5,16 @@ import Image from '../Image';
 
 class About extends Component {
   render() {
-    const { 
+    const {
+      responsiveFlags,
       ...others
     } = this.props;
 
     return (
       <div className={styles.About} {...others}>
         <Image className={styles.AboutImage} src={require('../../app/assets/headshot.jpg')}/>
-        <BodyText 
+        <BodyText
+          responsiveFlags={responsiveFlags}
           className={styles.AboutText}
           variant="about"
           highlightTitle={true}

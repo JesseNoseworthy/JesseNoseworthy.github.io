@@ -1,15 +1,14 @@
 // All Hero styles go here
+@import '../../globalStyles/mixin.scss';
 
 .heroContainer {
-  height: 100vh;
+  height: 75vh;
   background: linear-gradient(2deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(240,240,240,1) 50%, rgba(219,219,219,1) 100%);
+  @include FlexCenter;
+  flex-direction: column;
   .content {
-    height: 75vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include FlexCenter;
     flex-direction: column;
-    padding-bottom: 10vh;
     h1 {
       width: 55%;
       text-align: center;
@@ -27,6 +26,6 @@
 
 :global {
   .highlight {
-    color: #4284c0;
+    color: var(--muted-blue);
   }
 }

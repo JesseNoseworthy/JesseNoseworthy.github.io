@@ -1,20 +1,23 @@
+@import '../../globalStyles/mixin.scss';
+
 .About {
-  width: 70%;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  .AboutImage,
+  align-items: center;
+  justify-content: flex-end;
+  width: 45vw;
+  height: 100%;
+  // background-image: url('https://unsplash.it/1610/600');
   .AboutText {
-    margin: 75px 30px;
-  }
-  .AboutImage {
-    height: 250px;
-    width: auto;
-    box-shadow: 0.5px 0.5px 10px rgba(0,0,0,0.2);
-  }
-  .AboutText {
-    border-top: 2px solid var(--muted-blue);
-    border-bottom: 2px solid var(--muted-blue);
+    height: 100%;
+    padding: 20px;
+    padding-right: 7.5%;
+    padding-left: 5%;
+    padding-bottom: 50px;
+    @include FlexCenter;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.85);
+    color: var(--generic-white);
     h1 {
       margin: 15px 0;
     }

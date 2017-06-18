@@ -2,12 +2,13 @@
 @import '../../globalStyles/mixin.scss';
 
 .heroContainer {
-  height: 75vh;
+  height: 100vh;
   background: linear-gradient(2deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(240,240,240,1) 50%, rgba(219,219,219,1) 100%);
   @include FlexCenter;
-  flex-direction: column;
+  flex-direction: row;
   .content {
     @include FlexCenter;
+    width: 55vw;
     flex-direction: column;
     h1 {
       width: 55%;

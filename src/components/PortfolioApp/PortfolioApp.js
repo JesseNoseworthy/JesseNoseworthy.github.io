@@ -34,7 +34,6 @@ const PortfolioApp = React.createClass({
     return (
       <div className={styles.PortfolioApp}>
         <Hero responsiveFlags={responsiveFlags} />
-        <About responsiveFlags={responsiveFlags} />
       </div>
     )
   }

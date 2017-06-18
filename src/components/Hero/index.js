@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Hero.scss';
 import Image from '../Image';
+import About from '../About';
 
 const Hero = ({ responsiveFlags }) => (
   <div className={styles.heroContainer}>
@@ -8,6 +9,7 @@ const Hero = ({ responsiveFlags }) => (
       <Image className={styles.headshot} src={require('../../app/assets/headshot-rectangle.png')}/>
       <h1><span className="highlight">Hi,</span> I'm Jesse and I'm a Web Developer</h1>
     </div>
+    <About responsiveFlags={responsiveFlags} />
   </div>
 );
 

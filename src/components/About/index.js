@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './About.scss';
 import BodyText from '../BodyText';
-import Image from '../Image';
 
 class About extends Component {
   render() {
@@ -12,7 +11,6 @@ class About extends Component {
 
     return (
       <div className={styles.About} {...others}>
-        <Image className={styles.AboutImage} src={require('../../app/assets/headshot.jpg')}/>
         <BodyText
           responsiveFlags={responsiveFlags}
           className={styles.AboutText}

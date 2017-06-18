@@ -9,5 +9,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    h1 {
+      width: 55%;
+      text-align: center;
+    }
+  }
+}
+
+.headshot {
+  border-radius: 50%;
+  height: 225px;
+  width: 225px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+  margin: 25px;
+}
+
+:global {
+  .highlight {
+    color: #4284c0;
   }
 }

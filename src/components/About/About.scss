@@ -11,9 +11,8 @@
   .AboutText {
     height: 100%;
     padding: 20px;
-    padding-right: 7.5%;
-    padding-left: 5%;
-    padding-bottom: 50px;
+    padding: 50px;
+    text-align: center;
     @include FlexCenter;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.85);

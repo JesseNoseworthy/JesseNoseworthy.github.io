@@ -1,6 +1,6 @@
 // This will be the entry point for the application
 import '../styles';
-import './js-logger.config';
+import '../../config/js-logger.config';
 
 // Render
 import React from 'react';

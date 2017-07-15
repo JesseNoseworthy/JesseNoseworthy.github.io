@@ -56,7 +56,7 @@ For a quick guide on some of the differences between `yarn` and `npm`, check out
 - [typography.css](#typographycss)
 - [variables.css](#variablescss)
 
-The structure of component-based styles was explaining in the [Component Guide(#building-components), so head over there for an introspective look at how a base stylesheet is structured.
+The structure of component-based styles was explaining in the [Component Guide](#building-components), so head over there for an introspective look at how a base stylesheet is structured.
 
 This guide will look into how we're approach our reusable styles, most notably the contents within the `./styles` directory.
 

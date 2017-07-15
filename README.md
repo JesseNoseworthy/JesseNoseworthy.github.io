@@ -1,4 +1,4 @@
-# Canon Front-End
+# Getting Started!
 
 This application is built off of the [Create React App](https://github.com/facebookincubator/create-react-app) shell, with some custom modifications inspired by David Wells' [PostCSS-tutorial](https://github.com/DavidWells/PostCSS-tutorial) repository.
 
@@ -19,7 +19,7 @@ We will be using [Webpack](https://webpack.github.io/) for the configuration and
 
 ### Getting Started
 
-1. Clone the [Canon GitHub repository](https://github.com/climax-media/canon). 
+1. Clone this [GitHub repository](https://github.com/JesseNoseworthy/react_portfolio). 
 
 2. Ensure you have [Yarn installed](https://yarnpkg.com/en/docs/instal) first, then install all of the package dependencies for the project from your terminal:
 
@@ -56,7 +56,7 @@ For a quick guide on some of the differences between `yarn` and `npm`, check out
 - [typography.css](#typographycss)
 - [variables.css](#variablescss)
 
-The structure of component-based styles was explaining in the [Component wiki](https://github.com/climax-media/canon/wiki/Front-End:-creating-a-component#stylecss), so head over there for an introspective look at how a base stylesheet is structured.
+The structure of component-based styles was explaining in the [Component Guide(#building-components), so head over there for an introspective look at how a base stylesheet is structured.
 
 This guide will look into how we're approach our reusable styles, most notably the contents within the `./styles` directory.
 
@@ -93,11 +93,6 @@ Place any variables in this file and then import them into each stylesheet to be
 For reference, the structure used here is based off of [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars).
 
 ## Building Components
-
-- [Component Module Structure](https://github.com/climax-media/canon/wiki/Front-End:-creating-a-component#the-structure-of-a-component-module)
-- [React Components](https://github.com/climax-media/canon/wiki/Front-End:-creating-a-component#indexjs)
-- [Component-based Stylesheets](https://github.com/climax-media/canon/wiki/Front-End:-creating-a-component#stylecss)
-- [For Widgets, how their module structure differs from components](https://github.com/climax-media/canon/wiki/Front-End:-Structure-of-a-Widget)
 
 ### The structure of a component module
 
@@ -186,8 +181,6 @@ We will be taking [Jed Watson's Classnames libary](https://github.com/JedWatson/
 When assigning the components class, we will need to link it to our `styles` configuration. To do so, simple assign it by prefixing `styles` before the class. Then when we hook up the stylesheets, our local styles will connect to our className.
 
 #### style.css
-
-For information on how we're handling global styles, variables, mixins, and more head over to [this Wiki](https://github.com/climax-media/canon/wiki/Front-End:-global-styles,-mixins,-variables,-fonts).
 
 When setting up our stylesheets, we need to remember to import our variables so they can be used across the sheet. To do so, simply import the variables CSS module at the top of the stylesheet:
 

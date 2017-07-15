@@ -1,0 +1,174 @@
+/* VARIABLES */
+
+/*
+-- Colors
+---- Examples
+  h3 {
+    color: $red;
+  }
+*/
+
+/* ---- Basic Colors. */
+$red: #DB0812;
+$lightGrey: #D1D3D3;
+$darkGrey: #4B4F54;
+$white: #FFFFFF;
+$black: #000000;
+
+/* ---- Header Styling Global */
+$z-index-header: 11;
+$tablet-Overlay-Dimmed-Background: color(#000000 a(70%));
+$desktop-Active-Flyout-Link-Background: color(#000000 a(5%));
+$mobile-Flyout-Divider: color(#4B4F54 a(15%));
+
+/* ---- Header Styling Consumer. */
+$consumerHeader-PrimaryBackground: #FFFFFF;
+$consumerHeader-SecondaryBackground: color(#D1D3D3 a(85%));
+$consumerOverlay-Background: color(#FFFFFF a(85%));
+$consumerOverlay-Mobile-Background: #FFFFFF;
+$consumerOverlay-Pane-Background: color(#000000 a(10%));
+$consumerUtils-divider: color($darkGrey a(10%));
+
+/* ---- Header Styling Business. */
+$businessHeader-PrimaryBackground: #E8E9EA;
+$businessHeader-SecondaryBackground: color(#000000 a(10%));
+$businessOverlay-Background: color(#D1D3D3 a(85%));
+$businessOverlay-Mobile-Background: #D1D3D3;
+$businessOverlay-Pane-Background: color(#000000 a(5%));
+$businessUtils-divider: color($darkGrey a(30%));
+
+/* ---- Header Styling Pro Photo + Video. */
+$pro-photo-video-Header-PrimaryBackground: color(#000000 a(95%));
+$pro-photo-video-Header-SecondaryBackground: color(#4B4F54 a(65%));
+$pro-photo-video-Overlay-Background: color(#000000 a(85%));
+$pro-photo-video-Mobile-Overlay-Background: #000000;
+$pro-photo-video-Overlay-Pane-Background: color(#4B4F54 a(40%));
+$pro-photo-video-Utils-divider: color($darkGrey a(50%));
+
+/* ---- Secondary Navigation */
+$secondaryNavigationDividerDark: color(#4B4F54 a(30%));
+
+/* ---- Footer Stlying Global(no segment sepecific styling). */
+$z-index-footer: 10;
+$footer-topbar-background: #DCDDDE;
+$footer-main-background: #F8F8F8;
+$footer-contact-border: color($darkGrey a(50%));
+$footer-privacy-links-divider: color(#000000 a(20%));
+$footer-accordion-background: color(#000000 a(5%));
+
+/* ---- Animation */
+$navMenuFadeInSpeed: 0.5s ease-in-out;
+$navMenuFadeOutSpeed: 0.75s ease-out;
+$dropdownMenuStartPoint: 0px;
+$animationSpeed: all 0.3s ease;
+$storyCardAnimationSpeed: all 0.5s ease;
+
+/*
+-- Media Queries
+---- Examples
+  h1 {
+    @media (--desktop) {
+      color: red;
+    }
+    @media (--tablet) {
+      color: green;
+    }
+  }
+*/
+$desktopExtraLargeMin: 2560px;
+$desktopLargeMax: 2559px;
+$desktopLargeMin: 1920px;
+$desktopMax: 1919px;
+$desktopMin: 1200px;
+$tabletMax: 1199px;
+$tabletMin: 768px;
+$mobileMax: 767px;
+$mobileMin: 320px;
+$tabletLandscapeMin: 1024px;
+$tabletLandscapeMax: 1199px;
+$tabletPortraitMin: 1023px;
+$tabletPortraitMax: 728px;
+
+/* ---- Custom Media Queries. */
+@custom-media --mobile (min-width: $mobileMin) and (max-width: $mobileMax);
+@custom-media --tablet (min-width: $tabletMin) and (max-width: $tabletMax);
+@custom-media --desktop (min-width: $desktopMin) and (max-width: $desktopMax);
+@custom-media --desktopLarge (min-width: $desktopLargeMin) and (max-width: $desktopLargeMax);
+@custom-media --desktopExtraLarge (min-width: $desktopExtraLargeMin);
+@custom-media --desktopAll (min-width: $desktopMin) and (max-width: $desktopExtraLargeMin);
+@custom-media --tabletAndMobile (min-width: $mobileMin) and (max-width: $tabletMax);
+@custom-media --tabletLandscape (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) and (orientation: landscape);
+@custom-media --tabletPortrait (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) and (orientation: portrait);
+
+@custom-media --IE (-ms-high-contrast: none), (-ms-high-contrast: active);
+
+/* ---- Header Height. */
+$headerHeightDesktopShrunk: 35px;
+$tabletHeaderShrunkHeight: 40px;
+$headerHeightDesktop: 62px;
+$mobileHeaderHeight: 50px;
+
+/* ---- Secondary Nav Height. */
+$secondaryNavigationHeight: 50px;
+$z-index-secondary-nav: 10;
+
+/* ---- Panel Height. */
+$headerTabletPanelHeight: 76px;
+$headerMobilPanelHeight: 50px;
+$headerDesktopPanelHeight: 46px;
+
+/* ---- Logo. */
+$headerLogoWidthDesktop: 61px;
+$headerLogoWidthTablet: 89px;
+$headerLogoWidthMobile: 51px;
+
+/* ---- Header Search Icon. */
+$headerIconWidthDesktop: 24px;
+$headerIconWidthTablet: 17px;
+
+/* ---- Segment Selector. */
+$segmentImageWidth: 135px;
+
+/* ---- Header Thin Footer*/
+$thinFooterHeight: 45px;
+
+/* ---- Hero. */
+$heroTextWidthDefaultDesktop: calc(400 / 1280 * 100%);
+$heroTextWidthCenterDesktop: calc(450 / 1280 * 100%);
+$heroTextWidthDefaultTablet: 240px;
+$heroTextWidthCenterTablet: 480px;
+
+/* ---- Photo Credit. */
+$photoCreditWidthMobile: 116px;
+
+/* ---- IndustryPromoModule. */
+$IndustryPromoTall: 500px;
+$IndustryPromoTallDesktopLarge: 750px;
+$IndustryPromoTallTablet: 432px;
+
+$IndustryPromoShort: 374px;
+$IndustryPromoShortDesktopLarge: 547px;
+$IndustryPromoShortTablet: 300px;
+
+$IndustryPromoWidthDesktop: 244px;
+$IndustryPromoWidthDesktopLarge: 370px;
+$IndustryPromoWidthTablet: 384px;
+
+/* ---- Blur. */
+$blurIeFallback: rgba(0, 0, 0, 0.5);
+
+/* ---- Carousel. */
+$carouselDotSize: 1.5rem;
+
+/* ---- Modal. */
+$modal-z-index: 99;
+$modalDesktopPadding: 30px;
+$modalTabletPadding: 25px;
+$modalMobilePadding: 20px;
+
+/* ---- TouchSpots. */
+$touchSpotAnimationSpeed: all .075s ease-in;
+$touchSpotInactiveZIndex: -1;
+$touchSpotBaseZIndex: 1;
+$touchSpotTriggerOpenZIndex: 3;
+$touchSpotTextOpenZIndex: 2;

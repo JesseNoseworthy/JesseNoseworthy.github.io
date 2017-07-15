@@ -1,0 +1,20 @@
+exports[`Link Snapshot tests default state (only required props) 1`] = `
+<a
+  className=""
+  href="google.com" />
+`;
+
+exports[`Link Snapshot tests parses and sets innerHtml 1`] = `
+<a
+  className=""
+  href="google.com"
+  innerHtml="Test<sup>TM</sup>" />
+`;
+
+exports[`Link Snapshot tests sets children as text 1`] = `
+<a
+  className=""
+  href="google.com">
+  Test
+</a>
+`;

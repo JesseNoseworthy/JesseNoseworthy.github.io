@@ -1,0 +1,7 @@
+@import '../../styles/variables.css';
+@import '../../styles/mixins.css';
+
+:local(.Svg) {
+  @mixin FlexCenter;
+  width: 100%;
+}

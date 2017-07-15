@@ -1,0 +1,176 @@
+/* MIXINS */
+
+/*
+-- Fonts
+---- Examples
+
+@mixin ImportFont Gotham-Light, 6rem;
+@mixin ImportFont Gotham-Medium, 2.25rem;
+@mixin ImportFont Gotham-Bold, 1rem;
+@mixin ImportFont Gotham-Book, 3.3rem;
+@mixin ImportFont Gotham-Black, 1.75rem';
+*/
+
+/* Simply add a font to an element */
+@define-mixin ImportFont $fontname {
+  font-family: $fontname;
+};
+/*
+-- Typography
+---- Examples
+
+h1 {
+  @mixin H1Base 4rem, 4rem;
+}
+
+h4 {
+  @mixin H4Base 1.8rem, 2.2rem;
+}
+
+*/
+
+@define-mixin H1Base $fontSize, $lineHeight {
+  @mixin ImportFont Gotham-Light;
+  font-weight: 300;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  margin: 0;
+  padding: 0;
+};
+
+@define-mixin H2Base $fontSize, $lineHeight {
+  @mixin ImportFont Gotham-Light;
+  font-weight: 300;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  margin: 0;
+  padding: 0;
+};
+
+@define-mixin H3Base $fontSize, $lineHeight {
+  @mixin ImportFont Gotham-Book;
+  font-weight: 300;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  margin: 0;
+  padding: 0;
+};
+
+@define-mixin H4Base $fontSize, $lineHeight {
+  @mixin ImportFont Gotham-Medium;
+  font-weight: 500;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  margin: 0;
+  padding: 0;
+};
+
+@define-mixin H5Base $fontSize, $lineHeight {
+  @mixin ImportFont Gotham-Bold;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+};
+
+@define-mixin ButtonBase $fontSize, $lineHeight {
+  @mixin ImportFont Gotham-Medium;
+  font-weight: 500;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@define-mixin ParagraphBase $fontSize, $lineHeight {
+  @mixin ImportFont Gotham-Book;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  margin: 0;
+  padding: 0;
+};
+
+@define-mixin Icon $fontName {
+  font-family: $fontName;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.4rem;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+};
+
+/* Center elements with flexbox */
+@define-mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+};
+
+@define-mixin FullWidthHeight {
+  width: 100%;
+  height: 100%;
+}
+
+@define-mixin PositioningTopLeft {
+  top: 0;
+  left: 0;
+}
+
+@define-mixin PositioningTopRight {
+  top: 0;
+  right: 0;
+}
+
+@define-mixin PositioningBottomRight {
+  bottom: 0;
+  right: 0;
+}
+
+@define-mixin PositioningBottomLeft {
+  bottom: 0;
+  left: 0;
+}
+
+/* Hide from both screenreaders and browsers */
+@define-mixin Hidden {
+  display: none !important;
+  visibility: hidden;
+};
+
+/* Dropdown menu animation hidden state */
+@define-mixin Animation-Hidden $top {
+  visibility: hidden;
+  opacity: 0;
+  top: $top;
+  transition: 0.75s ease-out;
+}
+
+/* Import tags to be removed at a later date */
+@define-mixin Center-BackgroundImage {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+@define-mixin Modal-Padding {
+  @media (--desktopAll) {
+    padding: $modalDesktopPadding;
+  }
+  @media (--tablet) {
+    padding: $modalTabletPadding;
+  }
+  @media (--mobile) {
+    padding: $modalMobilePadding;
+  }
+}

@@ -1,22 +1,30 @@
-import React, { Component } from 'react';
-import styles from './Image.scss';
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import styles from './Image.css';
 
-class Image extends Component {
-  render() {
-
-    const { 
-      variant,
-      ...others
-    } = this.props;
-
-    return (
-      <img className={styles[variant]} {...others} />
-    );
-  }
-}
+const Image = ({
+  className,
+  src,
+  alt,
+  animationType,
+  ariaHidden
+}) => (
+  <img
+    data-aos={animationType}
+    className={classNames(styles.Image, className)}
+    src={src}
+    alt={alt}
+    aria-hidden={ariaHidden}
+  />
+);
 
 Image.propTypes = {
-  variant: React.PropTypes.string,
+  className: PropTypes.string,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  animationType: PropTypes.string,
+  ariaHidden: PropTypes.string
 };
 
 export default Image;

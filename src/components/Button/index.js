@@ -1,29 +1,38 @@
-import React, { Component } from 'react';
-import styles from './Button.scss';
+import React from 'react';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import styles from './Button.css';
 
-class Button extends Component {
-  render() {
-    const { 
-      children,
-      variant,
-      ...others
-    } = this.props;
-
-    return (
-      <button className={styles[variant]} {...others}>
-        {children}
-      </button>
-    );
-  }
-}
+const Button = ({
+  className,
+  children,
+  handleClick,
+  isActive,
+  isAnimating,
+  currentSegment,
+  ...others
+}) => (
+  <button
+    className={classNames(
+      styles.Button,className,
+      {[styles.AnimatingButton]: isAnimating},
+      {[styles[`AnimatingButton-${currentSegment}`]]: isAnimating}
+    )} {...others}>
+    {children}
+  </button>
+);
 
 Button.propTypes = {
-  children: React.PropTypes.any,
-  variant: React.PropTypes.string,
+  className: PropTypes.string,
+  children: PropTypes.any,
+  isAnimating: PropTypes.bool,
+  handleClick: PropTypes.func,
+  currentSegment: PropTypes.string,
+  isActive: PropTypes.bool
 };
 
-Button.defaultTypes = {
-  children: '',
-};
+Button.defaultProps = {
+  isAnimating: false
+}
 
 export default Button;

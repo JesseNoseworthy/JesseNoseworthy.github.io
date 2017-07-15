@@ -1,0 +1,35 @@
+@import '../../styles/variables.css';
+@import '../../styles/mixins.css';
+
+:local(.NewIcon) {
+  @mixin FlexCenter;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  border-radius: 50%;
+  background: $red;
+  color: $white;
+  @media (--desktopAll) {
+    height: 35px;
+    width: 35px;
+  }
+  @media (--tablet) {
+    height: 50px;
+    width: 50px;
+  }
+  @media (--mobile) {
+    height: 45px;
+    width: 45px;
+  }
+  &:not(:local(.NewIconFrench)) {
+    @mixin H5Base 0.9rem, 1em; 
+    letter-spacing: 0.05rem;
+  }
+}
+
+:local(.NewIconFrench) {
+  @mixin H5Base 0.7rem, 1em; 
+  letter-spacing: -0.075rem;
+  width: 47px;
+  height: 47px;
+  font-weight: normal;
+}

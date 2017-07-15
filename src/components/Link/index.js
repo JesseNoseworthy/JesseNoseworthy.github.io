@@ -1,27 +1,37 @@
-import React, { Component } from 'react';
-import styles from './Link.scss';
+import React from 'react';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import styles from './Link.css';
+import { isExternalLink } from '../../utils';
 
-class Link extends Component {
-  render() {
-    const { 
-      href,
-      children,
-      variant,
-      ...others
-    } = this.props;
-
-    return (
-      <a className={styles[variant]} href={href} {...others}>
-        {children}
-      </a>
-    );
-  }
-}
+const Link = ({
+  className,
+  variant,
+  href,
+  children,
+  isNav,
+  isWhite,
+  currentSegment,
+  ...others
+}) => (
+    <a  href={href}
+      className={classNames(styles.Link, variant, className)}
+      target={isExternalLink(href) ? '_blank' : '_self'}
+      {...others}>
+    {children}
+  </a>
+);
 
 Link.propTypes = {
-  href: React.PropTypes.string,
-  children: React.PropTypes.any,
-  variant: React.PropTypes.string,
+  variant: PropTypes.string,
+  className: PropTypes.string,
+  href: PropTypes.string,
+  children: PropTypes.any,
+  isNav: PropTypes.bool,
 };
+
+Link.defaultProps = {
+  isNav: false,
+}
 
 export default Link;

@@ -1,0 +1,140 @@
+@import 'mixins.css';
+@import 'variables.css';
+
+/*  Base typography mixins take both font-size and line-height parameters:
+  h1 {
+    @mixin H1Base font-size, line-height;
+  }
+  Refer to mixins.css for a breakdown of each element
+*/
+
+h1 {
+  @media (--mobile) {
+    @mixin H1Base 3.6rem, 3.438rem;
+  }
+  @media (--tablet) {
+    @mixin H1Base 4rem, 4rem;
+  }
+  @media (--desktop) {
+    @mixin H1Base 5rem, 5rem;
+  }
+  @media (--desktopLarge) {
+    @mixin H1Base 7.2rem, 7.5rem;
+  }
+  @media (--desktopExtraLarge) {
+    @mixin H1Base 9.6rem, 10rem;
+  }
+}
+
+h2 {
+  @media (--mobile) {
+    @mixin H2Base 2.4rem, 2.6rem;
+  }
+  @media (--tablet) {
+    @mixin H2Base 2.2rem, 3rem;
+  }
+  @media (--desktop) {
+    @mixin H2Base 2.4rem, 2.9rem;
+  }
+  @media (--desktopLarge) {
+    @mixin H2Base 3.6rem, 4.4rem;
+  }
+  @media (--desktopExtraLarge) {
+    @mixin H2Base 4.8rem, 5.8rem;
+  }
+}
+
+h3 {
+  @media (--mobile) {
+    @mixin H3Base 1.8rem, 2.1rem;
+  }
+  @media (--tablet) {
+    @mixin H3Base 1.6rem, 1.8rem;
+  }
+  @media (--desktop) {
+    @mixin H3Base 1.8rem, 2.2rem;
+  }
+  @media (--desktopLarge) {
+    @mixin H3Base 2.5rem, 3.3rem;
+  }
+  @media (--desktopExtraLarge) {
+    @mixin H3Base 3rem, 4.4rem;
+  }
+}
+
+h4 {
+  @media (--mobile) {
+    @mixin H4Base 1.6rem, 1.9rem;
+  }
+  @media (--tablet) {
+    @mixin H4Base 1.4rem, 1.6rem;
+  }
+  @media (--desktop) {
+    @mixin H4Base 1.6rem, 1.9rem;
+  }
+  @media (--desktopLarge) {
+    @mixin H4Base 2.1rem, 2.5rem;
+  }
+  @media (--desktopExtraLarge) {
+    @mixin H4Base 2.8rem, 3.4rem;
+  }
+}
+
+h5 {
+  @media (--mobile) {
+    @mixin H5Base 1.4rem, 1.6rem;
+  }
+  @media (--tablet) {
+    @mixin H5Base 1.2rem, 1.4rem;
+  }
+  @media (--desktop) {
+    @mixin H5Base 1.4rem, 1.8rem;
+  }
+  @media (--desktopLarge) {
+    @mixin H5Base 1.7rem, 2.7rem;
+  }
+  @media (--desktopExtraLarge) {
+    @mixin H5Base 2.1rem, 3.6rem;
+  }
+}
+
+p,
+a,
+li,
+dt,
+dl,
+span {
+  @media (--mobile) {
+    @mixin ParagraphBase 1.1rem, 1.8rem;
+  }
+  @media (--tablet) {
+    @mixin ParagraphBase 1rem, 1.6rem;
+  }
+  @media (--desktop) {
+    @mixin ParagraphBase 1.3rem, 2rem;
+  }
+  @media (--desktopLarge) {
+    @mixin ParagraphBase 1.5rem, 2.8rem;
+  }
+  @media (--desktopExtraLarge) {
+    @mixin ParagraphBase 1.8rem, 3.6rem;
+  }
+}
+
+button {
+  @media (--mobile) {
+    @mixin ButtonBase 1.4rem, 1.4rem;
+  }
+  @media (--tablet) {
+    @mixin ButtonBase 1.4rem, 1.4rem;
+  }
+  @media (--desktop) {
+    @mixin ButtonBase 1.2rem, 2rem;
+  }
+  @media (--desktopLarge) {
+    @mixin ButtonBase 1.5rem, 3rem;
+  }
+  @media (--desktopExtraLarge) {
+    @mixin ButtonBase 1.7rem, 3.6rem;
+  }
+}

@@ -1,0 +1,15 @@
+exports[`Image Snapshot tests default state (empty) 1`] = `
+<img
+  alt="this is alt text"
+  className=""
+  data-aos={undefined}
+  src="my-img.jpg" />
+`;
+
+exports[`Image Snapshot tests populated state 1`] = `
+<img
+  alt="this is alt text"
+  className="my-icon"
+  data-aos="fade"
+  src="my-img.jpg" />
+`;

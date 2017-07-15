@@ -1,8 +1,13 @@
+// This will be the entry point for the application
+import '../styles';
+import './js-logger.config';
+
+// Render
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PortfolioApp from '../components/PortfolioApp';
+import App from '../components/App';
 
 ReactDOM.render(
-  <PortfolioApp/>,
+  <App />,
   document.getElementById('app')
 );

@@ -1,0 +1,49 @@
+@import '../../styles/variables.css';
+@import '../../styles/mixins.css';
+
+:local(.Button) {
+  cursor: pointer;
+  transition: $animationSpeed;
+}
+
+:local(.AnimatingButton) {
+  @media (--desktopAll) {
+    transition: $animationSpeed;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform-origin: 50% 0;
+      transition: $animationSpeed;
+    }
+    &:not(:hover) {
+      &:before {
+        transform: scaleY(0);
+      }
+    }
+    &:hover {
+       &:before {
+        transform: scaleY(1);
+      }
+    }
+  }
+}
+
+:local(.AnimatingButton-business),
+:local(.AnimatingButton-consumer) {
+  &:before {
+    background: $businessHeader-SecondaryBackground;
+  }
+}
+
+:local(.AnimatingButton-pro-photo-video) {
+  &:before {
+    background: $pro-photo-video-Header-SecondaryBackground;
+  }
+}

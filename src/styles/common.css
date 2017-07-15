@@ -1,0 +1,29 @@
+@import 'variables.css';
+@import 'mixins.css';
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* html is set to 62.5% so that all the REM measurements throughout  are based on 10px sizing. So basically 1.5rem = 15px */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: $black;
+}
+
+svg {
+  width: 100%;
+}
+
+button {
+  border: none;
+}

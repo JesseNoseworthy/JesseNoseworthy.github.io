@@ -1,4 +1,4 @@
-# Getting Started!
+# Getting Started
 
 This application is built off of the [Create React App](https://github.com/facebookincubator/create-react-app) shell, with some custom modifications inspired by David Wells' [PostCSS-tutorial](https://github.com/DavidWells/PostCSS-tutorial) repository.
 

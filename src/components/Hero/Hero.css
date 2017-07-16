@@ -3,4 +3,5 @@
 
 :local(.Hero) {
   height: 100vh;
+  border: 40px solid $white;
 }

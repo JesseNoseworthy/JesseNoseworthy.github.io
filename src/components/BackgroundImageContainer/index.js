@@ -2,16 +2,21 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './BackgroundImageContainer.css';
+import { getResponsiveItem } from '../../utils';
 
 class BackgroundImageContainer extends Component {
   getBackground(tint, image) {
-    if (tint) {
-      return (
-        `linear-gradient(${tint}, ${tint}),
-        url(${image})`
+    const backgroundImage = `url(
+      ${getResponsiveItem(
+        image.desktopImageSrc,
+        image.tabletImageSrc,
+        image.mobileImageSrc
       )
+    })`
+    if (tint) {
+      return `linear-gradient(${tint}, ${tint}), ${backgroundImage}`
     }
-    return `url(${image})`
+    return backgroundImage
   }
 
   render() {
@@ -44,7 +49,12 @@ class BackgroundImageContainer extends Component {
 
 BackgroundImageContainer.propTypes = {
   className: PropTypes.string,
-  image: PropTypes.string,
+  image: PropTypes.shape({
+    desktopImageSrc: PropTypes.string,
+    tabletImageSrc: PropTypes.string,
+    mobileImageSrc: PropTypes.string,
+    imageAriaText: PropTypes.string
+  }),
   alt: PropTypes.string
 };
 

@@ -1,6 +1,10 @@
 {
   "hero": {
-    "image": "../assets/sf.jpg",
-    "alt": "alt text"
+    "image": {
+      "desktopImageSrc": "../assets/sf-desktop.jpg",
+      "tabletImageSrc": "",
+      "mobileImageSrc": "../assets/sf-mobile.jpg",
+      "alt": "alt text"
+    },
   }
 }

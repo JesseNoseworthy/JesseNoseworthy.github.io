@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import Hero from 'components/Hero';
 
 class App extends Component {
   render() {
-    return <h1>Hello</h1>
+    const { data } = this.props;
+
+    return (
+      <Hero {...data} />
+    );
   }
 }
 

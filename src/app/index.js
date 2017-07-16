@@ -6,8 +6,9 @@ import '../../config/js-logger.config';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../components/App';
+import AppData from './data/app.json';
 
 ReactDOM.render(
-  <App />,
+  <App data={AppData} />,
   document.getElementById('app')
 );

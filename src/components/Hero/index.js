@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import styles from './Hero.css';
-import ResponsiveImage from 'components/ResponsiveImage';
+import Image from 'components/Image';
+import BodyText from 'components/BodyText';
 
 class Hero extends Component {
   render() {
 
-    const { image } = this.props.hero;
+    const { image, bodyText } = this.props.hero;
 
     return (
-      <div>
-        <h1>Hello</h1>
-        <ResponsiveImage image={image} />
+      <div className={styles.Hero}>
+        <BodyText bodyText={bodyText} />
+        <Image src={image.src} alt={image.alt} />
       </div>
     )
   }

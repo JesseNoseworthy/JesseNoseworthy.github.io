@@ -1,10 +1,11 @@
 {
   "hero": {
     "image": {
-      "desktopImageSrc": "../assets/sf-desktop.jpg",
-      "tabletImageSrc": "",
-      "mobileImageSrc": "../assets/sf-mobile.jpg",
+      "src": "https://placehold.it/500/500",
       "alt": "alt text"
+    },
+    "bodyText": {
+      "title": "Title text"
     }
   }
 }

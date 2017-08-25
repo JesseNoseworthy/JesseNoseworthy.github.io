@@ -1,7 +1,0 @@
-@import '../../styles/variables.css';
-@import '../../styles/mixins.css';
-
-:local(.BackgroundImageContainer) {
-  @mixin Center-BackgroundImage;
-  width: 100vw;
-}

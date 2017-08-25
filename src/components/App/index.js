@@ -5,7 +5,7 @@ import Hero from 'components/Hero';
 
 const App = ({ data }) => (
   <Body variables={variables}>
-    <Hero variables={variables} {...data} />
+    <Hero variables={variables} {...data.hero} />
   </Body>
 )
 

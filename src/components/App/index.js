@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Body from 'components/Body';
+import variables from 'utils/variables';
 import Hero from 'components/Hero';
 
-class App extends Component {
-  render() {
-    const { data } = this.props;
+const App = ({ data }) => (
+  <Body variables={variables}>
+    <Hero variables={variables} {...data} />
+  </Body>
+)
 
-    return (
-      <Hero {...data} />
-    );
-  }
-}
 
 export default App;

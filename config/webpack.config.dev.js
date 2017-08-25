@@ -68,10 +68,6 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: 'style!css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]&camelCase!postcss'
-      },
-      {
         test: /\.json$/,
         loader: 'json'
       },

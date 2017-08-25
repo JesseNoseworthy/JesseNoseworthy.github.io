@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import styles from './BackgroundImageContainer.css';
+import styled from 'styled-components';
+// import styles from './BackgroundImageContainer.css';
 import { getResponsiveItem } from '../../utils';
 
-class BackgroundImageContainer extends Component {
-  getBackground(tint, image) {
-    const backgroundImage = `url(
-      ${getResponsiveItem(
-        image.desktopImageSrc,
-        image.tabletImageSrc,
-        image.mobileImageSrc
-      )
-    })`
-    if (tint) {
-      return `linear-gradient(${tint}, ${tint}), ${backgroundImage}`
-    }
-    return backgroundImage
-  }
+const Name = styled.div`
+  padding: 10px;
+  font-weight: bold;
+  line-height: 1.2;
+  height: 40px;
+  color: pink;
+`;
 
+
+class BackgroundImageContainer extends Component {
   render() {
     const {
       image,
@@ -30,18 +26,9 @@ class BackgroundImageContainer extends Component {
       ...others
     } = this.props;
 
-    const backgroundImageStyles = {
-      background: this.getBackground(tint, image),
-      ...inlineStyles
-    }
-
     return (
-      <div
-        className={classNames(styles.BackgroundImageContainer, className)}
-        style={backgroundImageStyles}
-        aria-label={alt}
-        {...others}>
-        {children}
+      <div>
+        <Name>Hello, Name styles</Name>
       </div>
     );
   }

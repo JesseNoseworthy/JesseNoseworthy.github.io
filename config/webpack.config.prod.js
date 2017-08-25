@@ -88,11 +88,6 @@ module.exports = {
         )
       },
       {
-        test: /\.css$/,
-        loader: 'style!css',
-        include: [paths.appNodeModules]
-      },
-      {
         test: /\.json$/,
         loader: 'json'
       },

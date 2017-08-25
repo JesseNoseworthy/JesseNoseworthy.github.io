@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "aos": "^2.1.1",
+    "babel-plugin-styled-components": "^1.1.7",
     "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
     "classnames": "^2.2.5",
     "enzyme": "^2.8.2",
     "flickity": "^2.0.8",
@@ -30,7 +32,8 @@
     "react-responsive": "^1.2.10",
     "react-slick": "^0.14.11",
     "react-test-renderer": "^15.5.4",
-    "react-youtube": "^7.4.0"
+    "react-youtube": "^7.4.0",
+    "styled-components": "^2.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
@@ -103,11 +106,6 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     }
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
   },
   "eslintConfig": {
     "extends": "./config/eslint.js"

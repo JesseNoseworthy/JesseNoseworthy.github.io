@@ -10,13 +10,15 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-
+  padding: 25px;
+  color: ${props => props.variables.secondaryColor};
+  background: ${props => props.variables.primaryColor};
 `;
 
 const Hero = ({ ...props }) => (
   <Container>
     <BackgroundImage full={true} {...props}>
-      <Title>{props.bodyText.title}</Title>
+      <Title variables={props.variables}>{props.bodyText.title}</Title>
     </BackgroundImage>
   </Container>
 );

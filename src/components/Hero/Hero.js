@@ -1,25 +1,60 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import BackgroundImage from 'components/BackgroundImageContainer';
+import Image from 'components/Image';
+import SubContent from 'components/HeroSubContent';
 import styled from 'styled-components';
+import media from 'utils/media';
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  ${media.tablet`
+    padding-top: 50px;
+    height: 50vh;
+  `};
+`;
+
+const BodyText = styled.div`
+  width: 100%;
+  padding: 0 20px;
+  ${media.tablet`
+    width: auto;
+    margin-left: 25px;
+  `};
 `;
 
 const Title = styled.h1`
-  padding: 25px;
-  color: ${props => props.variables.secondaryColor};
-  background: ${props => props.variables.primaryColor};
+  color: ${props => props.variables.black};
+  font-size: 30px;
+  margin: 0;
 `;
 
-const Hero = ({ ...props }) => (
+const ImageContainer = styled.div`
+  width: 100%;
+  margin-bottom: 25px;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ${media.tablet`
+    max-width: 50%;
+    margin-right: 25px;
+  `};
+`;
+
+
+const Hero = ({ variables, bodyText, image }) => (
   <Container>
-    <BackgroundImage full={true} {...props}>
-      <Title variables={props.variables}>{props.bodyText.title}</Title>
-    </BackgroundImage>
+    <ImageContainer>
+      <Image image={image} isRound={true} />
+    </ImageContainer>
+    <BodyText>
+      <Title variables={variables}>{bodyText.title}</Title>
+      <SubContent variables={variables} />
+    </BodyText>
   </Container>
 );
 

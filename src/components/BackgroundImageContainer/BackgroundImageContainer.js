@@ -10,6 +10,8 @@ const Background = styled.div`
   align-items: inherit;
   flex-direction: inherit;
   flex-basis: inherit;
+  padding: 10%;
+  margin: inherit;
   ${props => props.full && css`
     height: 100vh;
     width: 100vw;

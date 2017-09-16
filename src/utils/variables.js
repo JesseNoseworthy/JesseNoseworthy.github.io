@@ -1,6 +1,7 @@
 export default Object.assign({}, {
-  primaryColor: '#ADEAFA',
-  secondaryColor: '#DEFAAA',
-  black: 'rgb(51, 51, 51)',
-  fontFamily: 'Helvetica Neue, Arial, --system-default'
+  primaryColor: 'rgb(240, 65, 75)',
+  secondaryColor: 'rgb(240, 40, 120)',
+  black: 'rgb(25, 25, 25)',
+  fontFamily: 'Lato, sans-serif',
+  fontFamilySecondary: 'Open Sans, sans-serif'
 });

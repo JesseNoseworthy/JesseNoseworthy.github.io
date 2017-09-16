@@ -1,11 +1,11 @@
 {
   "hero": {
     "image": {
-      "src": "https://unsplash.it/1400/800",
+      "src": "https://avatars1.githubusercontent.com/u/17211269?v=4&s=460",
       "alt": "alt text"
     },
     "bodyText": {
-      "title": "Title text"
+      "title": "Hi, I'm Jesse Noseworthy!"
     }
   }
 }

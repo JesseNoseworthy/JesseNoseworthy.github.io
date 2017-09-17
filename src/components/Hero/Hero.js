@@ -9,9 +9,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   ${media.tablet`
     padding-top: 50px;
-    height: 50vh;
   `};
 `;
 
@@ -26,7 +26,7 @@ const BodyText = styled.div`
 
 const Title = styled.h1`
   color: ${props => props.variables.black};
-  font-size: 30px;
+  font-size: 38px;
   margin: 0;
 `;
 

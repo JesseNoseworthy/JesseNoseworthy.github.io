@@ -5,6 +5,9 @@ import styled from 'styled-components';
 const Container = styled.div`
   color: ${props => props.variables.black};
   font-family: ${props => props.variables.fontFamily};
+  background: ${props => props.variables.white};
+  height: 100vh;
+  width: 100vw;
 `;
 
 const Body = props => (

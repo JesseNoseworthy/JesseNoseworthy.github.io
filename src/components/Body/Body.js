@@ -10,11 +10,13 @@ const Container = styled.div`
   width: 100vw;
 `;
 
-const Body = props => (
-  <Container {...props}>
-    {props.children}
-  </Container>
-);
+const Body = props => {
+  return (
+    <Container {...props}>
+      {props.children}
+    </Container>
+  );
+}
 
 Body.propTypes = {
   variables: PropTypes.object

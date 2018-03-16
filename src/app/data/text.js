@@ -58,3 +58,22 @@ export const space = (
     </p>
   </div>
 )
+
+export const data = [
+  {
+    label: 1,
+    content: cars
+  },
+  {
+    label: 2,
+    content: hotels
+  },
+  {
+    label: 3,
+    content: flights
+  },
+  {
+    label: 4,
+    content: space
+  }
+];

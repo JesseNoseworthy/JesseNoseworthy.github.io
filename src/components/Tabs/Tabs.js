@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// const Container = styled.div``;
+const Container = styled.div`width: 50vw;`;
 
 class Tabs extends Component {
   constructor(props) {
@@ -26,9 +26,9 @@ class Tabs extends Component {
       })
     })
     return (
-      <div className="Tabs">
+      <Container>
         {children}
-      </div>
+      </Container>
     )
   }
 }

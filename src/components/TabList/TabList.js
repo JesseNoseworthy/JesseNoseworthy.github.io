@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid red;
+`;
 
 class TabList extends Component {
   render() {

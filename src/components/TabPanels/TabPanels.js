@@ -1,17 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div``;
+const Container = styled.div`height: 65vh`;
 
-class TabPanels extends Component {
-  render() {
-    const { activeIndex, children } = this.props
-    return (
-      <Container>
-        {children[activeIndex]}
-      </Container>
-    )
-  }
-}
+const TabPanels = ({ activeIndex, children }) => (
+  <Container>
+    {children[activeIndex]}
+  </Container>
+);
 
 export default TabPanels;

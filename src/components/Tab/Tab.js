@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-// import styled from 'styled-components';
+import React from 'react';
+import styled, { css } from 'styled-components';
 
-// const Container = styled.div``;
+const Container = styled.button`
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  ${props => props.isActive && css`
+    background: red;
+  `};
+  ${props => props.disabled && css`
+    background: rgba(0, 0, 0, 0.25);
+  `};
+`;
 
-class Tab extends Component {
-  render() {
-    const { isActive, isDisabled, onSelect } = this.props
-    return (
-      <div
-        className={
-          isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'
-        }
-        onClick={isDisabled ? null : onSelect}
-      >
-        {this.props.children}
-      </div>
-    )
-  }
-}
+const Tab = ({ children, onSelect, isDisabled, ...others }) => (
+  <Container onClick={isDisabled ? null : onSelect} {...others}>
+    {children}
+  </Container>
+);
 
 export default Tab;

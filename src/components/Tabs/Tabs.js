@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`width: 50vw;`;
+const Container = styled.div`
+  width: 50vw;
+  padding: 25px;
+  background: white;
+`;
 
 class Tabs extends Component {
   constructor(props) {

@@ -10,13 +10,11 @@ const Container = styled.div`
   width: 100vw;
 `;
 
-const Body = props => {
-  return (
-    <Container {...props}>
-      {props.children}
-    </Container>
-  );
-}
+const Body = ({ children, ...others }) => (
+  <Container>
+    {React.Children.map(children, child => React.cloneElement(child))}
+  </Container>
+);
 
 Body.propTypes = {
   variables: PropTypes.object

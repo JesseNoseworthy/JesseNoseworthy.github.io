@@ -1,13 +1,34 @@
-import React from 'react';
-import Body from 'components/Body';
-import variables from 'utils/variables';
-import Hero from 'components/Hero';
+import React, { Component } from 'react';
+import * as text from 'app/data/text';
+import TabData from 'components/TabData';
 
-const App = ({ data }) => (
-  <Body variables={variables}>
-    <Hero variables={variables} {...data.hero} />
-  </Body>
-)
 
+class App extends Component {
+  render() {
+    const tabData = [
+      {
+        label: 1,
+        content: text.cars
+      },
+      {
+        label: 2,
+        content: text.hotels
+      },
+      {
+        label: 3,
+        content: text.flights
+      },
+      {
+        label: 4,
+        content: text.space
+      }
+    ]
+    return (
+      <div className="App">
+        <TabData data={tabData} />
+      </div>
+    )
+  }
+}
 
 export default App;

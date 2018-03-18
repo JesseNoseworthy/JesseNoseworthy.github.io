@@ -1,15 +1,8 @@
 import React from 'react'
 import Home from 'components/Home';
+import Portfolio from 'components/Portfolio';
 
-export const portfolio = (
-  <div>
-    <h2>
-      What I've Built
-    </h2>
-  </div>
-)
-
-export const travel = (
+export const blog = (
   <div>
     <h2>
       Where I've Been
@@ -24,10 +17,10 @@ export const data = [
   },
   {
     label: "What I've Built",
-    content: portfolio
+    content: Portfolio
   },
   {
-    label: "Where I've Been",
-    content: travel
+    label: "What I've Written",
+    content: blog
   },
 ];

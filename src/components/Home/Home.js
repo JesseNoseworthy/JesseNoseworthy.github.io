@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Image from 'components/Image';
 import media from 'utils/media';
 

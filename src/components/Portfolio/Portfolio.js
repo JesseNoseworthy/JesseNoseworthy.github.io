@@ -1,34 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
 import media from 'utils/media';
+import PortfolioItem from './PortfolioItem';
 
-const Container = styled.div``;
+const Container = styled.div`
+  height: 100%;
+  padding: 40px;
+`;
 
-const PortfolioItem = styled.div`
+const Header = styled.header``;
+
+const PortfolioList = styled.div`
   display: flex;
-  justify-content: space-between;
-  height: 200px;
-  margin: 50px;
-`;
-
-const PortfolioItemContent = styled.div`
-  width: calc(50% - 15px);
-`;
-
-const PortfolioItemImage = styled.img`
-  height: 200px;
+  flex-wrap: wrap;
 `;
 
 const Portfolio = (
   <Container>
-    <PortfolioItem>
-      <PortfolioItemContent>
-        <h3>Canon.ca</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.</p>
-        <a href='#'>See it Live</a>
-      </PortfolioItemContent>
-      <PortfolioItemImage src='https://unsplash.it/400/400' />
-    </PortfolioItem>
+    <Header>
+      <h2>What I've Worked on!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.</p>
+    </Header>
+    <PortfolioList>
+      <PortfolioItem
+        title='canon'
+        demoUrl='#'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.'
+      />
+      <PortfolioItem
+        title='canon'
+        demoUrl='#'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.'
+      />
+      <PortfolioItem
+        title='canon'
+        demoUrl='#'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.'
+      />
+    </PortfolioList>
   </Container>
 );
 

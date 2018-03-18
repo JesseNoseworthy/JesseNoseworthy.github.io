@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   height: 90%;
-  background: rgb(202, 104, 94);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  border-bottom: none;
 `;
 
 const TabPanels = ({ activeIndex, children }) => (

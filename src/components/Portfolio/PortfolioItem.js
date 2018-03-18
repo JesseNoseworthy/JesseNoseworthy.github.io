@@ -4,7 +4,6 @@ import media from 'utils/media';
 import Link from 'components/Link'
 
 const Container = styled.div`
-  width: calc(50% - (20px * 2));
   margin: 10px;
   height: 100px;
   display: flex;
@@ -14,6 +13,8 @@ const Container = styled.div`
   padding: 15px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.175);
+
+  ${media.desktop`width: calc(50% - (20px * 2));`};
 `;
 
 const Title = styled.h3`width: 100%;`;

@@ -5,7 +5,9 @@ import PortfolioItem from './PortfolioItem';
 
 const Container = styled.div`
   height: 100%;
-  padding: 40px;
+  padding: 20px;
+
+  ${media.desktop`padding: 40px;`};
 `;
 
 const Header = styled.header``;

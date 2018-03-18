@@ -5,7 +5,7 @@ import Portfolio from 'components/Portfolio';
 export const blog = (
   <div>
     <h2>
-      Where I've Been
+      What I've Written
     </h2>
   </div>
 )

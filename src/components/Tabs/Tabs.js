@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import media from 'utils/media';
 
 const Container = styled.div`
-  width: 50vw;
-  padding: 25px;
-  background: white;
+  margin: 20px;
+  height: calc(100vh - (20px * 2));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ${media.desktop`
+    width: 80vw;
+    height: 80vh;
+    margin: 0;
+  `};
 `;
 
 class Tabs extends Component {

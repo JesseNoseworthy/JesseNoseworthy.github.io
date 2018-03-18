@@ -1,12 +1,5 @@
 import React from 'react'
-
-export const home = (
-  <div>
-    <h2>
-      Home
-    </h2>
-  </div>
-)
+import Home from 'components/Home';
 
 export const portfolio = (
   <div>
@@ -27,7 +20,7 @@ export const travel = (
 export const data = [
   {
     label: 'Home',
-    content: home
+    content: Home
   },
   {
     label: "What I've Built",

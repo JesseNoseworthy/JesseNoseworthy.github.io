@@ -1,6 +1,8 @@
 import React from 'react'
 import Home from 'components/Home';
 import Portfolio from 'components/Portfolio';
+import homeData from './home.json';
+import portfolioData from './portfolio.json';
 
 export const blog = (
   <div>
@@ -10,14 +12,14 @@ export const blog = (
   </div>
 )
 
-export const data = [
+export const tabs = [
   {
     label: 'Home',
-    content: Home
+    content: <Home {...homeData} />
   },
   {
     label: "What I've Built",
-    content: Portfolio
+    content: <Portfolio {...portfolioData} />
   },
   {
     label: "What I've Written",

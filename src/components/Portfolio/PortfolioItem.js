@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import media from 'utils/media';
 import Link from 'components/Link'
 
-const Container = styled.div`
+const Container = styled(Link)`
+  width: 100%;
   margin: 10px;
-  height: 100px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -13,27 +14,47 @@ const Container = styled.div`
   padding: 15px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.175);
+  text-decoration: none;
 
+  * {
+    color: rgb(51, 51, 51);
+  }
+  
+  &:hover {
+    background: rgba(0,0,0,0.025);
+  }
+  
   ${media.desktop`width: calc(50% - (20px * 2));`};
 `;
 
-const Title = styled.h3`width: 100%;`;
+const Title = styled.h5`
+  font-size: 1.4rem;
+  width: 100%;
+`;
 
-const DemoLink = styled(Link)`
+const DemoLink = styled.p`
+  margin: 0;
+  line-height: 1rem;
   text-decoration: none;
-  width: 55px;
   background: rgb(78,108,202);
   color: white;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   border-radius: 5px;
+  font-size: 11px;
+`;
+
+const Description = styled.p`
+  width: 100%;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
 `;
 
 const PortfolioItem = ({ title, description, demoUrl }) => title && demoUrl && (
-  <Container>
+  <Container href={demoUrl}>
     <Title>{title}</Title>
-    {description && <p>{description}</p>}
-    <DemoLink href={demoUrl}>Demo</DemoLink>
+    {description && <Description>{description}</Description>}
+    <DemoLink>Demo</DemoLink>
   </Container>
 );
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { data } from 'app/data/text';
-import TabData from 'components/TabData';
 import styled from 'styled-components';
+import { tabs } from 'app/data/tabs';
+import TabData from 'components/TabData';
 import media from 'utils/media';
 
 const Container = styled.div`
@@ -12,17 +12,14 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  ${media.desktop`
-    height: 100vh;
-  `};
-
+  ${media.desktop`height: 100vh;`};
 `;
 
 class App extends Component {
   render() {
     return (
       <Container>
-        <TabData data={data} />
+        <TabData data={tabs} />
       </Container>
     )
   }

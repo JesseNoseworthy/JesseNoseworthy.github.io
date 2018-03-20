@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Image from 'components/Image';
 import media from 'utils/media';
@@ -41,19 +42,26 @@ const Title = styled.h1`
 
 const Description = styled.p``;
 
-const Home = (
-  <Container>
-    <About>
-      <Title>Jesse Noseworthy</Title>
-      <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan. Sed at nisl non tortor placerat dapibus sit amet non erat.
+class Home extends Component {
+  render() {
+    const { title, description, headshot } = this.props;
 
-        <br /> 
-        <br /> 
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras bibendum lacus venenatis, maximus sapien quis, porttitor mauris.Fusce laoreet consequat ipsum a lacinia.
-      </Description>
-    </About>
-    <Headshot src='https://unsplash.it/400/400' />
-  </Container>
-);
+    return (
+      <Container>
+        <About>
+          {title && <Title>{title}</Title>}
+          {description && <Description dangerouslySetInnerHTML={{ __html: description} }/>}
+        </About>
+        {headshot && <Headshot src={headshot} alt={title} />}
+      </Container>
+    );
+  }
+}
+
+Home.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  headshot: PropTypes.string,
+};
 
 export default Home;

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import media from 'utils/media';
 import PortfolioItem from './PortfolioItem';
@@ -10,37 +11,41 @@ const Container = styled.div`
   ${media.desktop`padding: 40px;`};
 `;
 
-const Header = styled.header``;
+const Header = styled.header`margin: 0 10px;`;
+
+const Title = styled.h2`color: rgb(78,108,202);`;
 
 const PortfolioList = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
-const Portfolio = (
-  <Container>
-    <Header>
-      <h2>What I've Worked on!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.</p>
-    </Header>
-    <PortfolioList>
-      <PortfolioItem
-        title='canon'
-        demoUrl='#'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.'
-      />
-      <PortfolioItem
-        title='canon'
-        demoUrl='#'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.'
-      />
-      <PortfolioItem
-        title='canon'
-        demoUrl='#'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.'
-      />
-    </PortfolioList>
-  </Container>
-);
+class Portfolio extends Component {
+  render() {
+    const { title, description, items } = this.props;
+
+    return (
+      <Container>
+        <Header>
+          {title && <Title>{title}</Title>}
+          {description && <p>{description}</p>}
+        </Header>
+        <PortfolioList>
+          {items.map((portfolioItem, key) => <PortfolioItem key={key} {...portfolioItem} />)}
+        </PortfolioList>
+      </Container>
+    );
+  }
+}
+
+Portfolio.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    "title": PropTypes.string,
+    "demoUrl": PropTypes.string,
+    "description": PropTypes.string
+   }))
+};
 
 export default Portfolio;

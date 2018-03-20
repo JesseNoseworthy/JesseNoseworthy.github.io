@@ -33,16 +33,24 @@ const Headshot = styled(Image)`
   `};
 `;
 
+const Title = styled.h1`
+  color: rgb(78,108,202);
+
+  ${media.mobile`font-size: 2.6rem;`};
+`;
+
+const Description = styled.p``;
+
 const Home = (
   <Container>
     <About>
-      <h2>Jesse Noseworthy</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan. Sed at nisl non tortor placerat dapibus sit amet non erat.
+      <Title>Jesse Noseworthy</Title>
+      <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan. Sed at nisl non tortor placerat dapibus sit amet non erat.
 
         <br /> 
         <br /> 
         Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras bibendum lacus venenatis, maximus sapien quis, porttitor mauris.Fusce laoreet consequat ipsum a lacinia.
-      </p>
+      </Description>
     </About>
     <Headshot src='https://unsplash.it/400/400' />
   </Container>

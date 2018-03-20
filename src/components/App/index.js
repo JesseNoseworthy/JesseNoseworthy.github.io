@@ -12,7 +12,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  ${media.desktop`height: 100vh;`};
+  ${media.desktop`
+    height: 100vh;
+  `};
+
 `;
 
 class App extends Component {

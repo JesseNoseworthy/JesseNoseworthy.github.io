@@ -3,14 +3,14 @@
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.",
   "items": [
     {
-      "title": "Canon",
+      "title": "Canon.ca",
       "demoUrl": "#",
-      "description": "Lorem ipsum dolor sit amet"
+      "description": "A modular-based application built with React and PostCSS, with dynamic rendering."
     },
     {
-      "title": "Canon",
+      "title": "Honda Build and Price",
       "demoUrl": "#",
-      "description": "Lorem ipsum dolor sit amet"
+      "description": "A virtual tool that allows users to build a virtual vehicle, and calculate their pricing options."
     },
     {
       "title": "Canon",

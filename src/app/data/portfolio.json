@@ -3,19 +3,40 @@
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.",
   "items": [
     {
+      "title": "Honda/Acura Build and Price",
+      "demo": [
+        {
+          "title": "Honda Demo",
+          "url": "#"
+        },
+        {
+          "title": "Acura Demo",
+          "url": "#"
+        }
+      ],
+      "description": "A virtual car-building tool that allows users to build a vehicle, and calculator various pricing options.",
+      "skills": "React, Redux, Theming, Styled-Components"
+    },
+    {
       "title": "Canon.ca",
-      "demoUrl": "#",
-      "description": "A modular-based application built with React and PostCSS, with dynamic rendering."
+      "demo": [
+        {
+          "title": "see more",
+          "url": "#"
+        }
+      ],
+      "description": "modules to be rendered dynamically across pages. This application also gives the admin complete control over the look and feel of their modules. Skills used: React, WebPack,"
     },
     {
-      "title": "Honda Build and Price",
-      "demoUrl": "#",
-      "description": "A virtual tool that allows users to build a virtual vehicle, and calculate their pricing options."
-    },
-    {
-      "title": "Canon",
-      "demoUrl": "#",
-      "description": "Lorem ipsum dolor sit amet"
+      "title": "Acura.ca Homepage",
+      "demo": [
+        {
+          "title": "see more",
+          "url": "#"
+        }
+      ],
+      "description": "A single-page React application than includes a dynamic carousel, location-based data, and responsive components.",
+      "skills": "React, Sass"
     }
   ]
 }

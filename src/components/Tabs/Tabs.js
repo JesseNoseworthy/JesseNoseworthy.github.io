@@ -13,6 +13,7 @@ const Container = styled.div`
   ${media.desktop`
     width: 80vw;
     height: 80vh;
+    max-width: 1000px;
     margin: 0;
   `};
 `;

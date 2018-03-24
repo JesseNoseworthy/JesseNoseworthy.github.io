@@ -24,6 +24,7 @@ class Body extends Component {
       <Container>
         <NavBar routes={routes} />
         <Switch>
+          <Route path={'/'} exact component={Home} />
           {routes.map(route => (
             <Route key={route.id} path={route.path} 
               render={() => <route.main {...route.data} />}

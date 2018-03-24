@@ -5,15 +5,23 @@ import media from 'utils/media';
 import PortfolioItem from './PortfolioItem';
 
 const Container = styled.div`
+  max-width: 1000px;
   height: 100%;
   padding: 20px;
+  text-align: center;
 
-  ${media.desktop`padding: 40px;`};
+  ${media.desktop`
+    padding: 0;
+    margin: 40px auto;
+    text-align: initial;
+  `};
 `;
 
 const Header = styled.header`margin: 0 10px;`;
 
-const Title = styled.h2`color: rgb(78,108,202);`;
+const Title = styled.h2`
+  color: ${props => props.theme.colors.primary}
+`;
 
 const PortfolioList = styled.div`
   display: flex;
@@ -42,10 +50,10 @@ Portfolio.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   items: PropTypes.arrayOf(PropTypes.shape({
-    "title": PropTypes.string,
-    "demoUrl": PropTypes.string,
-    "description": PropTypes.string
-   }))
+    'title': PropTypes.string,
+    'demoUrl': PropTypes.string,
+    'description': PropTypes.string
+  }))
 };
 
 export default Portfolio;

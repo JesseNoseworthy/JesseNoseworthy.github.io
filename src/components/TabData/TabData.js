@@ -10,13 +10,6 @@ class TabData extends Component {
     const { data } = this.props
     return (
       <Tabs>
-        <TabPanels>
-          {data.map((tab, key) =>
-            <TabPanel key={key}>
-              {tab.content}
-            </TabPanel>
-          )}
-        </TabPanels>
         <TabList>
           {data.map((tab, key) =>
             <Tab key={key}>
@@ -24,6 +17,13 @@ class TabData extends Component {
             </Tab>
           )}
         </TabList>
+        <TabPanels>
+          {data.map((tab, key) =>
+            <TabPanel key={key}>
+              {tab.content}
+            </TabPanel>
+          )}
+        </TabPanels>
       </Tabs>
     )
   }

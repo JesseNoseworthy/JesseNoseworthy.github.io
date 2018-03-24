@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import media from 'utils/media';
 
 const Container = styled.div`
-  background: rgb(78, 108, 202);
+  background: ${props => props.theme.colors.primary};
   display: flex;
   justify-content: center;
-  height: 10%;
+  height: ${props => props.theme.values.tabListHeight};
   padding: 10px;
-  border-top: 10px solid rgb(250, 250, 250);
 
   ${media.desktop`justify-content: flex-end;`};
 `;

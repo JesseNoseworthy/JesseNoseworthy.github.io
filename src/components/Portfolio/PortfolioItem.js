@@ -12,10 +12,10 @@ const Container = styled.div`
   align-items: center;
   padding: 15px;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.175);
+  border: ${props => `1px solid ${props.theme.colors.border}`};
 
   * {
-    color: rgb(51, 51, 51);
+    color: ${props => props.theme.colors.black};
     text-align: center;
     ${media.desktop`text-align: initial;`};
   }
@@ -41,8 +41,8 @@ const DemoLink = styled(Link)`
   text-decoration: none;
   text-transform: lowercase;
   font-weight: 100;
-  background: rgb(78,108,202);
-  color: white;
+  background: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.white};
   padding: 10px 15px;
   text-align: center;
   border-radius: 5px;
@@ -54,7 +54,7 @@ const Description = styled.p`
   font-size: 0.8rem;
   line-height: 1.4rem;
   padding-bottom: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+  border-bottom: ${props => `1px solid ${props.theme.colors.border}`};
 `;
 
 const TitleRow = styled.div`
@@ -67,7 +67,7 @@ const TitleRow = styled.div`
 `;
 
 const Skills = styled.span`
-  color: gray;
+  color: ${props => props.theme.colors.gray};
   text-transform: uppercase;
   font-size: 10px;
 `;

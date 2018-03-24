@@ -140,7 +140,6 @@ module.exports = {
     'no-with': 'warn',
     'no-whitespace-before-property': 'warn',
     'operator-assignment': ['warn', 'always'],
-    'quotes': ['warn', 'single'],
     radix: 'warn',
     'require-yield': 'warn',
     'rest-spread-spacing': ['warn', 'never'],

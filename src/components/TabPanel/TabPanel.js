@@ -1,10 +1,3 @@
-import { Component } from 'react';
-// import styled from 'styled-components';
-
-class TabPanel extends Component {
-  render() {
-    return this.props.children
-  }
-}
+const TabPanel = ({ children }) => children
 
 export default TabPanel;

@@ -25,7 +25,8 @@
           "url": "#"
         }
       ],
-      "description": "modules to be rendered dynamically across pages. This application also gives the admin complete control over the look and feel of their modules. Skills used: React, WebPack,"
+      "description": "modules to be rendered dynamically across pages. This application also gives the admin complete control over the look and feel of their modules. Skills used: React, WebPack,",
+      "skills": "React, Redux, Theming, Styled-Components"
     },
     {
       "title": "Acura.ca Homepage",

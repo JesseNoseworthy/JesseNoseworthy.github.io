@@ -14,7 +14,7 @@ export const blog = (
 
 export const tabs = [
   {
-    label: 'Home',
+    label: "Home",
     content: <Home {...homeData} />
   },
   {

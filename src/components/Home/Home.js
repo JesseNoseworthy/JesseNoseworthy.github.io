@@ -19,23 +19,20 @@ const About = styled.div`
   ${media.desktop`
     width: 50%;
     justify-content: center;
-    border-right: 5px solid rgb(250, 250, 250);
   `};
 `;
 
 const Headshot = styled(Image)`
   height: 50%;
-  border-bottom: 10px solid rgb(250, 250, 250);
   ${media.desktop`
     height: 100%;
     width: 50%;
-    border-left: 5px solid rgb(250, 250, 250);
     border-bottom: none;
   `};
 `;
 
 const Title = styled.h1`
-  color: rgb(78,108,202);
+  color: ${props => props.theme.colors.primary};
 
   ${media.mobile`font-size: 2.6rem;`};
 `;
@@ -44,7 +41,7 @@ const Description = styled.p``;
 
 class Home extends Component {
   render() {
-    const { title, description, headshot } = this.props;
+    const { title, description, headshot, theme } = this.props;
 
     return (
       <Container>

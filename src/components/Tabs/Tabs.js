@@ -3,17 +3,13 @@ import styled from 'styled-components';
 import media from 'utils/media';
 
 const Container = styled.div`
-  margin: 20px;
-  height: calc(100vh - (20px * 2));
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   ${media.desktop`
-    width: 80vw;
-    height: 80vh;
-    max-width: 1000px;
     margin: 0;
   `};
 `;

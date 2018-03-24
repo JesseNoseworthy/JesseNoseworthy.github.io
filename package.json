@@ -32,6 +32,8 @@
     "react-dom": "stable",
     "react-lazyload": "^2.2.7",
     "react-responsive": "^1.2.10",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-slick": "^0.14.11",
     "react-test-renderer": "^15.5.4",
     "react-youtube": "^7.4.0",

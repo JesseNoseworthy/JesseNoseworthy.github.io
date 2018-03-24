@@ -5,7 +5,8 @@ import Link from 'components/Link'
 
 const Container = styled.div`
   width: 100%;
-  margin: 10px;
+  max-width: 530px;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -25,6 +26,7 @@ const Container = styled.div`
   }
   
   ${media.desktop`
+    margin: 10px;
     width: calc(50% - (20px * 2));
     align-items: flex-end;
   `};
@@ -85,7 +87,11 @@ const PortfolioItem = ({ title, description, demo, skills }) => title && demo.le
     </TitleRow>
     {description && <Description>{description}</Description>}
     <DemoLinks>
-      {demo.map(demoItem => <DemoLink href={demoItem.url}>{demoItem.title}</DemoLink>)}
+      {demo.map((demoItem, key) => 
+        <DemoLink href={demoItem.url} target="_blank" key={key}>
+          {demoItem.title}
+        </DemoLink>
+      )}
     </DemoLinks>
   </Container>
 );

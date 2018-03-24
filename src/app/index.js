@@ -4,6 +4,13 @@ import '../../config/js-logger.config';
 // Render
 import React from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from 'components/App';
+import ROUTES from 'app/data/routes';
 
-render(<App />, document.getElementById('app'));
+render(
+  <Router>
+    <App routes={ROUTES} />
+  </Router>,
+  document.getElementById('app')
+);

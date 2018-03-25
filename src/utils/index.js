@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 export function getWindowWidth() {
   return window.innerWidth
     || document.documentElement.clientWidth
@@ -41,45 +39,4 @@ export function isTablet() {
 
 export function isDesktop() {
   return getWindowWidth() >= 1200 && getWindowWidth() < 1920
-}
-
-export function isDesktopLarge() {
-  return getWindowWidth() >= 1920 && getWindowWidth() < 2560
-}
-
-export function isDesktopExtraLarge() {
-  return getWindowWidth() >= 2560
-}
-
-export function isDesktopAll() {
-  return getWindowWidth() >= 1200
-}
-
-export function getResponsiveItem(desktop, tablet, mobile) {
-  if (desktop) {
-    if (isMobile()) {
-      return mobile || desktop
-    } else if (isTablet()) {
-      return tablet || desktop
-    } else {
-      return desktop
-    }
-  }
-}
-
-export function smoothScroll(element, scrollSpeed, offset) {
-  function getScrollSpeed() {
-    if (scrollSpeed) {
-      return scrollSpeed
-    }
-    return 425
-  }
-  if (element.hash !== '') {
-    const hash = element.hash;
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top - offset
-    }, getScrollSpeed(), () => {
-      window.location.hash = hash;
-    });
-  }
 }

@@ -1,9 +1,0 @@
-exports[`Button Snapshot tests Basic render 1`] = `
-<button
-  className="" />
-`;
-
-exports[`Button Snapshot tests populated state 1`] = `
-<button
-  className="sample-button" />
-`;

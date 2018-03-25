@@ -11,7 +11,7 @@ const Container = styled.div`
   ${media.desktop`flex-direction: row;`};
 `;
 
-const Biography = styled.div`
+const Content = styled.div`
   padding: 40px;
   height: 100%;
   display: flex;
@@ -45,10 +45,10 @@ class About extends Component {
 
     return (
       <Container>
-        <Biography>
+        <Content>
           {title && <Title>{title}</Title>}
           {description && <Description dangerouslySetInnerHTML={{ __html: description} }/>}
-        </Biography>
+        </Content>
         {headshot && <Headshot src={headshot} alt={title} />}
       </Container>
     );

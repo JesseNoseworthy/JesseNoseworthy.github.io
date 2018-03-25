@@ -5,6 +5,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from 'components/Home';
 import NavBar from 'components/NavBar';
 import media from 'utils/media';
+import WithResponsive from 'utils/WithResponsive';
 
 const Container = styled.div`
   height: 100%;
@@ -27,7 +28,11 @@ class Body extends Component {
           <Route path={'/'} exact component={Home} />
           {routes.map(route => (
             <Route key={route.id} path={route.path} 
-              render={() => <route.main {...route.data} />}
+              render={props => (
+                <WithResponsive>
+                  <route.main {...route.data} />
+                </WithResponsive>
+              )}
             />
           ))}
           <Redirect to={routes[0].path} />

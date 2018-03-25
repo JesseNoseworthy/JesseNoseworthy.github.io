@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PortfolioCard  from 'components/Portfolio/PortfolioCard';
+import media from 'utils/media';
 
-const Container = styled.div``;
+const Container = styled.div`position: relative;`;
 
 const Asset = styled.div`
   background-image: ${props => `url(${props.backgroundImage})`};
-  height: 100vh;
+  height: ${props => `calc(100vh - ${props.theme.values.navBarHeight})`};
   width: 100vw;
+
+  ${media.desktop`height: 100vh;`};
 `;
 
 const Content = styled.div``;

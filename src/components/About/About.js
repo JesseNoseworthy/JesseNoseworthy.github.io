@@ -5,10 +5,15 @@ import Image from 'components/Image';
 import media from 'utils/media';
 
 const Container = styled.div`
-  height: 100%;
+  height: ${props => `calc(100vh - ${props.theme.values.navBarHeight})`};
   display: flex;
   flex-direction: column-reverse;
-  ${media.desktop`flex-direction: row;`};
+  width: 100vw;
+
+  ${media.desktop`
+    flex-direction: row;
+    height: 100vh;
+  `};
 `;
 
 const Content = styled.div`

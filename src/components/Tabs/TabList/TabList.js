@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import media from 'utils/media';
-import Dropdown from 'components/Dropdown';
 
 const Container = styled.div`
   position: absolute;
@@ -11,6 +10,7 @@ const Container = styled.div`
   border-top: ${props => `1px solid ${props.theme.colors.primary}`};
   display: flex;
   flex-direction: column;
+  z-index: ${props => props.theme.values.tabListZindex};
 
   ${media.desktop`
     flex-direction: row;

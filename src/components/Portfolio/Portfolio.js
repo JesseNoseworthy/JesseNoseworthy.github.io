@@ -3,33 +3,39 @@ import PropTypes from 'prop-types';
 import Tabs from 'components/Tabs';
 import PortfolioItem from 'components/Portfolio/PortfolioItem';
 
+
 class Portfolio extends Component {
+
+  getTabData() {
+    return this.props.items.map((tab, key) => {
+      return {
+        label: this.props.items[key].title,
+        content: <PortfolioItem data={tab} />
+      }
+    });
+  }
+
   render() {
-    // const tabs = [
-    //   {
-    //     label: "Home",
-    //     content: <PortfolioItem data={this.props.items[0]} />
-    //   },
-    //   {
-    //     label: "work",
-    //     content: 'goodbye'
-    //   }
-    // ];
+    const { items, deviceFlags } = this.props;
 
-    const { items } = this.props;
+    if (deviceFlags && deviceFlags.isDesktop) {
+      return (
+        <Tabs
+          tabsData={this.getTabData()}
+        />
+      )
+    } else {
+      return items.map((item, key) => <PortfolioItem data={item} key={key} />)
+    }
 
-    return (
-      <Tabs
-        tabsData={
-          items.map((tab, key) => {
-            return {
-              label: items[key].title,
-              content: <PortfolioItem data={this.props.items[key]} />
-            }
-          })
-        }
-      />
-    )
+  }
+}
+
+Portfolio.defaultProps = {
+  deviceFlags: {
+    isMobile: true,
+    isTablet: false,
+    isDesktop: false,
   }
 }
 
@@ -40,7 +46,12 @@ Portfolio.propTypes = {
     'title': PropTypes.string,
     'demoUrl': PropTypes.string,
     'description': PropTypes.string
-  }))
+  })),
+  deviceFlags: PropTypes.shape({
+    'isMobile': PropTypes.bool,
+    'isTablet': PropTypes.bool,
+    'isDesktop': PropTypes.bool
+  })
 };
 
 export default Portfolio;

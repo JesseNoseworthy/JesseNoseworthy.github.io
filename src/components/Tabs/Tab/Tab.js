@@ -26,7 +26,6 @@ class Tab extends Component {
     const {
       children,
       onSelect,
-      id,
       isDisabled,
       ...others
     } = this.props;

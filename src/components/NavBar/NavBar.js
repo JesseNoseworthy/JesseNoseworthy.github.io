@@ -10,6 +10,7 @@ const Container = styled.div`
   min-height: ${props => props.theme.values.navBarHeight};
   padding: 0 20px;
   width: 100vw;
+  z-index: ${props => props.theme.values.navBarZindex};
 
   ${media.desktop`
     position: absolute;

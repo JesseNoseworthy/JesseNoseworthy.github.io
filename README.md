@@ -1,6 +1,6 @@
 # Getting Started
 
-- WORK IN PROGRESS -
+WORK IN PROGRESS
 
 ### System Requirements
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import NavLink from 'components/NavLink';
+import NavLinks from './NavLinks';
 import media from 'utils/media';
+import WithResponsive from 'utils/WithResponsive';
 
 const Container = styled.div`
   background: ${props => props.theme.colors.fadedBlack};
@@ -23,7 +24,6 @@ const Container = styled.div`
   `};
 `;
 
-const NavLinkContainer = styled.div`display: flex;`;
 
 const Title = styled.h1`
   line-height: ${props => props.theme.values.navBarHeight};
@@ -38,14 +38,10 @@ class NavBar extends Component {
 
     return (
       <Container>
-        <Title>JN.</Title>
-        <NavLinkContainer>
-          {routes.map(route => 
-            <NavLink to={route.path} key={route.id}>
-              {route.label}
-            </NavLink>
-          )}
-        </NavLinkContainer>
+        <WithResponsive>
+          <Title>JN.</Title>
+          {routes && <NavLinks links={routes} />}
+        </WithResponsive>
       </Container>
     )
   }

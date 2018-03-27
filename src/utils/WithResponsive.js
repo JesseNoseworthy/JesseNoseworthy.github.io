@@ -39,7 +39,8 @@ class WithResponsive extends Component {
   }
   
   render() {
-    return React.Children.map(this.props.children, (child, index) => React.cloneElement(child, { deviceFlags: { ...this.state } }))
+    return React.Children.map(this.props.children, (child, index) =>
+      React.cloneElement(child, { deviceFlags: { ...this.state } }))
   }
 }
 

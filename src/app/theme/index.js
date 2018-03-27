@@ -12,6 +12,7 @@ module.exports = {
     baseTransition: '0.1s ease',
     navBarHeight: '81px',
     navBarZindex: '10',
-    tabListZindex: '9'
+    tabListZindex: '9',
+    modalZIndex: '20'
   }
 };

@@ -10,12 +10,12 @@ const Container = styled.div`
 `;
 
 const CloseButton = styled.button`
-  position: absolute;
-  top: 50px;
-  right: 50px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
   border: none;
-  height: 50px;
-  width: 50px;
+  height: 42px;
+  width: 42px;
   background: ${props => props.theme.colors.white};
   z-index: ${props => props.theme.values.modalZIndex};
   border-radius: 50%;

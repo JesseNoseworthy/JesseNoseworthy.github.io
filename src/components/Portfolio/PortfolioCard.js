@@ -90,7 +90,7 @@ const PortfolioCard = ({ title, description, demo, skills }) => (
     </Content>
     <DemoLinks>
       {demo.map((demoItem, key) => 
-        <DemoLink href={demoItem.url} target="_blank" key={key}>
+        <DemoLink href={demoItem.href} target="_blank" key={key}>
           {demoItem.title}
         </DemoLink>
       )}

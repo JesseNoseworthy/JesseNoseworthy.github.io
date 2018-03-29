@@ -8,11 +8,11 @@
       "demo": [
         {
           "title": "Honda Demo",
-          "url": "http://www.honda.ca/buildyourhonda"
+          "href": "http://www.honda.ca/buildyourhonda"
         },
         {
           "title": "Acura Demo",
-          "url": "http://www.acura.ca/buildyouracura"
+          "href": "http://www.acura.ca/buildyouracura"
         }
       ],
       "description": "A virtual car-building tool that allows users to build a vehicle, and calculator various pricing options.",
@@ -24,7 +24,7 @@
       "demo": [
         {
           "title": "see more",
-          "url": "http://www.canon.ca"
+          "href": "http://www.canon.ca"
         }
       ],
       "description": "modules to be rendered dynamically across pages. This application also gives the admin complete control over the look and feel of their modules, including dynamic themes per business segment.",
@@ -36,7 +36,7 @@
       "demo": [
         {
           "title": "see more",
-          "url": "http://www.acura.ca"
+          "href": "http://www.acura.ca"
         }
       ],
       "description": "A single-page React application than includes a dynamic carousel, location-based data, and responsive components.",

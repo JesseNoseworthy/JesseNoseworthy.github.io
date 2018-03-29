@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Image from 'components/Image';
+import Social from './Social';
 import media from 'utils/media';
 
 const Container = styled.div`
-  height: ${props => `calc(100vh - ${props.theme.values.navBarHeight})`};
   display: flex;
   flex-direction: column-reverse;
   width: 100vw;
@@ -18,7 +18,6 @@ const Container = styled.div`
 
 const Content = styled.div`
   padding: 40px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   ${media.desktop`
@@ -46,13 +45,14 @@ const Description = styled.p``;
 
 class About extends Component {
   render() {
-    const { title, description, headshot } = this.props;
+    const { title, description, headshot, socialLinks } = this.props;
 
     return (
       <Container>
         <Content>
           {title && <Title>{title}</Title>}
           {description && <Description dangerouslySetInnerHTML={{ __html: description} }/>}
+          <Social links={socialLinks} />
         </Content>
         {headshot && <Headshot src={headshot} alt={title} />}
       </Container>
@@ -64,6 +64,10 @@ About.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   headshot: PropTypes.string,
+  socialLinks: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    href: PropTypes.string
+  }))
 };
 
 export default About;

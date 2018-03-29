@@ -7,6 +7,7 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from 'components/App';
 import ROUTES from 'app/data/routes';
+import 'app/globalStyles';
 
 render(
   <Router>

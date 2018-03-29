@@ -1,9 +1,0 @@
-@import '../../styles/variables.css';
-@import '../../styles/mixins.css';
-
-:local(.QuoteIcon) {
-  @mixin ImportFont Gotham-Book;
-  font-style: normal;
-  font-size: 4rem;
-  height: calc(4rem / 2);
-}

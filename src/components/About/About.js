@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Image from 'components/Image';
 import Social from './Social';
 import media from 'utils/media';
+import desktopImage from 'assets/images/nepal-tall.jpg';
+import mobileImage from 'assets/images/nepal-wide.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -26,12 +28,18 @@ const Content = styled.div`
   `};
 `;
 
-const Headshot = styled(Image)`
-  height: 50%;
+const Headshot = styled.div`
+  background-image: ${props => `url(${mobileImage})`};
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 40vh;
   ${media.desktop`
     height: 100%;
     width: 50%;
     border-bottom: none;
+    background-image: ${props => `url(${desktopImage})`};
   `};
 `;
 
@@ -54,7 +62,9 @@ class About extends Component {
           {description && <Description dangerouslySetInnerHTML={{ __html: description} }/>}
           <Social links={socialLinks} />
         </Content>
-        {headshot && <Headshot src={headshot} alt={title} />}
+        {headshot &&
+          <Headshot src={desktopImage} alt={title} />
+        }
       </Container>
     );
   }

@@ -63,7 +63,7 @@ class About extends Component {
           <Social links={socialLinks} />
         </Content>
         {headshot &&
-          <Headshot src={desktopImage} alt={title} />
+          <Headshot src={desktopImage} title={title} />
         }
       </Container>
     );

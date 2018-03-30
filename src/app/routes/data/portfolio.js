@@ -1,10 +1,26 @@
+import acuraImage from 'assets/images/acura-portfolio.jpg';
+import hondaImage from 'assets/images/honda-portfolio.jpg';
+import canonImage from 'assets/images/canon-portfolio.jpg';
+
 module.exports = {
   "title": "Check out my portfolio!",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.",
   "items": [
     {
+      "title": "Canon.ca",
+      "image": canonImage,
+      "demo": [
+        {
+          "title": "see more",
+          "href": "http://www.canon.ca"
+        }
+      ],
+      "description": "modules to be rendered dynamically across pages. This application also gives the admin complete control over the look and feel of their modules, including dynamic themes per business segment.",
+      "skills": "React, Theming, Sass, WebPack"
+    },
+    {
       "title": "Honda/Acura Build and Price Calculator",
-      "image": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-0.3.5&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&s=0cc301e5bd9cd8e82fc3aa1cf8d6033d",
+      "image": hondaImage,
       "demo": [
         {
           "title": "Honda Demo",
@@ -19,20 +35,8 @@ module.exports = {
       "skills": "React, Redux, Theming, Styled-Components, WebPack"
     },
     {
-      "title": "Canon.ca",
-      "image": "https://climaxmedia.com/wp-content/themes/climax/assets/images/case-studies/case-honda-full.jpg",
-      "demo": [
-        {
-          "title": "see more",
-          "href": "http://www.canon.ca"
-        }
-      ],
-      "description": "modules to be rendered dynamically across pages. This application also gives the admin complete control over the look and feel of their modules, including dynamic themes per business segment.",
-      "skills": "React, Theming, Sass, WebPack"
-    },
-    {
       "title": "Acura.ca Homepage",
-      "image": "https://climaxmedia.com/wp-content/themes/climax/assets/images/case-studies/case-acura-full.jpg",
+      "image": acuraImage,
       "demo": [
         {
           "title": "see more",

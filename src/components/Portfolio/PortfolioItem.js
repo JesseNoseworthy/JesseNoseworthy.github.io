@@ -7,6 +7,9 @@ const Container = styled.div`position: relative;`;
 
 const Asset = styled.div`
   background-image: ${props => `url(${props.backgroundImage})`};
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: ${props => `calc(100vh - ${props.theme.values.navBarHeight})`};
   width: 100vw;
 

@@ -11,7 +11,7 @@ module.exports = {
       "image": canonImage,
       "demo": [
         {
-          "title": "see more",
+          "title": "See More",
           "href": "http://www.canon.ca"
         }
       ],
@@ -23,12 +23,12 @@ module.exports = {
       "image": hondaImage,
       "demo": [
         {
-          "title": "Honda Demo",
-          "href": "http://www.honda.ca/buildyourhonda"
-        },
-        {
           "title": "Acura Demo",
           "href": "http://www.acura.ca/buildyouracura"
+        },
+        {
+          "title": "Honda Demo",
+          "href": "http://www.honda.ca/buildyourhonda"
         }
       ],
       "description": "A virtual car-building tool that allows users to build a vehicle, and calculator various pricing options.",
@@ -39,7 +39,7 @@ module.exports = {
       "image": acuraImage,
       "demo": [
         {
-          "title": "see more",
+          "title": "See More",
           "href": "http://www.acura.ca"
         }
       ],

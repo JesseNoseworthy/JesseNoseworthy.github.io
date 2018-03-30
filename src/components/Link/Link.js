@@ -1,11 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-const Link = ({ href, children, ...others }) => ( <a href={href} {...others}>{children}</a> );
-
-Link.propTypes = {
-  href: PropTypes.string,
-  children: PropTypes.any
-};
+const Link = styled.a`
+  text-decoration: none;
+`;
 
 export default Link;

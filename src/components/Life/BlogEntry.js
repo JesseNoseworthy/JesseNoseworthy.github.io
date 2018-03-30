@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Image from 'components/Image';
+import Link from 'components/Link';
 import media from 'utils/media';
 
-const Entry = styled.div`
+const Entry = styled(Link)`
   display: flex;
   flex-direction: column;
   margin: 0 10px;
-
+  
   &:not(:last-child) {
     border-bottom: ${props => `1px solid ${props.theme.colors.border}`};
     padding-bottom: 50px;
@@ -45,16 +46,19 @@ const Entry = styled.div`
 
 const Content = styled.div``;
 
+const MockLink = styled.span``;
+
 const EntryTitle = styled.h4`
   margin-top: 20px;
 `;
 
-const BlogEntry = ({ title, image, description }) => (
-  <Entry>
+const BlogEntry = ({ title, image, description, ...others }) => (
+  <Entry {...others}>
     <Image src={image} />
     <Content>
       <EntryTitle>{title}</EntryTitle>
       <p>{description}</p>
+      <MockLink>Read More</MockLink>
     </Content>
   </Entry>
 );

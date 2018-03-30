@@ -7,7 +7,6 @@ const Container = styled.div`margin-top: 15px;`;
 
 const SocialLink = styled(Link)`
   margin-right: 15px;
-  text-decoration: none;
 
   transition: ${props => `color ${props.theme.values.baseTransition}`};
   &:hover {

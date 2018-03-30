@@ -1,6 +1,6 @@
-import acuraImage from 'assets/images/acura-portfolio.jpg';
-import hondaImage from 'assets/images/honda-portfolio.jpg';
-import canonImage from 'assets/images/canon-portfolio.jpg';
+import acuraImage from 'assets/images/portfolio/acura-portfolio.jpg';
+import hondaImage from 'assets/images/portfolio/honda-portfolio.jpg';
+import canonImage from 'assets/images/portfolio/canon-portfolio.jpg';
 
 module.exports = {
   "title": "Check out my portfolio!",

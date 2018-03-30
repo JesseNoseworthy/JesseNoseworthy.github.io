@@ -14,86 +14,9 @@ module.exports = {
         "title": "A day in my life",
         "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
-      {
-        "title": "A day in my life",
-        "image": "https://a0.muscache.com/airbnb/static/jobs/new/engineering/5-wide-right-2up-83e559669b16da7bea6b3723504209b9.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos tenetur fugiat dolor laborum, officia maxime tempora. Asperiores odit natus quidem, amet deleniti non distinctio facilis porro, veniam minus saepe.",
-        "href": "#"
-      },
+        "href": "#",
+        "linkText": "Read More"
+      }
     ]
   }
 };

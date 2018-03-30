@@ -52,13 +52,13 @@ const EntryTitle = styled.h4`
   margin-top: 20px;
 `;
 
-const BlogEntry = ({ title, image, description, ...others }) => (
+const BlogEntry = ({ title, image, description, linkText, ...others }) => (
   <Entry {...others}>
     <Image src={image} />
     <Content>
       <EntryTitle>{title}</EntryTitle>
       <p>{description}</p>
-      <MockLink>Read More</MockLink>
+      {linkText && <MockLink>{linkText}</MockLink>}
     </Content>
   </Entry>
 );
@@ -70,6 +70,7 @@ BlogEntry.propTypes = {
   image: PropTypes.string,
   description: PropTypes.string,
   link: PropTypes.string,
+  linkText: PropTypes.string,
 };
 
 export default BlogEntry;

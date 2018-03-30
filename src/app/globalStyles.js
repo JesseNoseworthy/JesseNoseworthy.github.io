@@ -13,6 +13,10 @@ injectGlobal`
     letter-spacing: 1.2px;
   }
 
+  body {
+    background: rgb(250, 250, 250);
+  }
+  
   *,
   *::before,
   *::after {

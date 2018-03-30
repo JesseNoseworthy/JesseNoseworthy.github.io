@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Image from 'components/Image';
 import Social from './Social';
 import media from 'utils/media';
-import desktopImage from 'assets/images/nepal-tall.jpg';
-import mobileImage from 'assets/images/nepal-wide.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -29,7 +26,7 @@ const Content = styled.div`
 `;
 
 const Headshot = styled.div`
-  background-image: ${props => `url(${mobileImage})`};
+  background-image: ${props => `url(${props.mobileSrc})`};
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +36,7 @@ const Headshot = styled.div`
     height: 100%;
     width: 50%;
     border-bottom: none;
-    background-image: ${props => `url(${desktopImage})`};
+    background-image: ${props => `url(${props.desktopSrc})`};
   `};
 `;
 
@@ -63,7 +60,7 @@ class About extends Component {
           <Social links={socialLinks} />
         </Content>
         {headshot &&
-          <Headshot src={desktopImage} title={title} />
+          <Headshot {...headshot} title={title} />
         }
       </Container>
     );
@@ -73,7 +70,10 @@ class About extends Component {
 About.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  headshot: PropTypes.string,
+  headshot: PropTypes.shape({
+    mobileSrc: PropTypes.string,
+    desktopSrc: PropTypes.string
+  }),
   socialLinks: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     href: PropTypes.string

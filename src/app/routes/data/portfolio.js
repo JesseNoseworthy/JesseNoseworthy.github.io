@@ -1,4 +1,4 @@
-{
+module.exports = {
   "title": "Check out my portfolio!",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quam eu rutrum accumsan.",
   "items": [

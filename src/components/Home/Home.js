@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import ROUTES from 'app/data/routes';
+import ROUTES from 'app/routes';
 
 class Home extends Component {
   render() {

@@ -10,7 +10,6 @@ import WithResponsive from 'utils/WithResponsive';
 const Container = styled.div`
   height: 100%;
   width: 100vw;
-  background: ${props => props.theme.colors.background};
   display: flex;
   flex-direction: column;
 

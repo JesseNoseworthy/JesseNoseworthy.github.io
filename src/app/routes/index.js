@@ -1,6 +1,6 @@
 import About from "components/About";
 import Portfolio from "components/Portfolio";
-import data from "app/data/routes/data";
+import data from "./data";
 
 const ROUTES = [
   {

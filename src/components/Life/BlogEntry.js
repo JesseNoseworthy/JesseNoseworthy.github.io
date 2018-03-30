@@ -9,11 +9,8 @@ const Entry = styled.div`
   flex-direction: column;
   margin: 0 10px;
 
-  &:first-child {
-    border-bottom: ${props => `1px solid ${props.theme.colors.border}`};
-  }
-
   &:not(:last-child) {
+    border-bottom: ${props => `1px solid ${props.theme.colors.border}`};
     padding-bottom: 50px;
     margin-bottom: 50px;
   }
@@ -35,6 +32,7 @@ const Entry = styled.div`
     &:not(:first-child) {
       width: calc((100% / 2) - (25px * 2));
       flex-direction: column;
+      border-bottom: none;
     }
   `};
 

@@ -5,7 +5,6 @@ import PortfolioItem from 'components/Portfolio/PortfolioItem';
 
 
 class Portfolio extends Component {
-
   getTabData() {
     return this.props.items.map((tab, key) => {
       return {

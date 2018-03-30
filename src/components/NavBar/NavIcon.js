@@ -6,7 +6,6 @@ const OpenButton = styled.button`
   cursor: pointer;
   background: none;
   border: none;
-  ${media.desktop`display: none;`};
 `;
 
 const IconLine = styled.span`

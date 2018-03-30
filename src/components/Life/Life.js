@@ -38,7 +38,7 @@ class Life extends Component {
             <IntroTitle>{intro.title}</IntroTitle>
             <IntroDescription>{intro.description}</IntroDescription>
           </Intro>
-          <Blog entries={blogContent} />
+          <Blog {...blogContent} />
         </Content>
       </Container>
     );

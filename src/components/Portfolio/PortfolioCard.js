@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import media from 'utils/media';
-import Link from 'components/Link'
+import StyledLink from 'components/StyledLink'
 
 const Container = styled.div`
   width: 100vw;
@@ -31,21 +31,10 @@ const Title = styled.h5`
   ${media.desktop`font-size: 2.8rem;`};
 `;
 
-const DemoLink = styled(Link)`
-  text-decoration: none;
-  text-transform: lowercase;
-  font-weight: 100;
-  background: ${props => props.theme.colors.primary};
-  color: ${props => props.theme.colors.white};
-  padding: 10px 15px;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  height: 40px;
-  line-height: 20px;
-  width: 150px;
+const DemoLink = styled(StyledLink)`
   margin-bottom: 10px;
-
+  text-align: center;
+  
   &:not(:first-child) {
     margin-left: 10px;
     ${media.desktop`margin-left: 0;`};

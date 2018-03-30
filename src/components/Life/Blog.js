@@ -3,8 +3,15 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import media from 'utils/media';
 import BlogEntry from './BlogEntry';
+import StyledButton from 'components/StyledButton';
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const EntryContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -17,20 +24,50 @@ const Container = styled.div`
   `};
 `;
 
+const LoadMore = styled(StyledButton)`margin-top: 20px;`;
+
 class Blog extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.splitUpProducts = this.splitUpProducts.bind(this);
+
+    this.state = {
+      currentEntriesInteger: 0,
+      splitChunk: 4
+    }
+  }
+  splitUpProducts() {
+    const { splitChunk, currentEntriesInteger } = this.state;
+
+    this.setState({
+      currentEntriesInteger: currentEntriesInteger + splitChunk,
+    })
+  }
+
+  componentDidMount() {
+    this.splitUpProducts();
+  }
+
   render() {
-    const { entries } = this.props;
+    const { entries, buttonText } = this.props;
+    const { currentEntriesInteger } = this.state;
 
     return (
       <Container>
-        {entries.map((entry, key) => <BlogEntry key={key} {...entry} /> )}
+        <EntryContainer>
+          {entries.slice(0, currentEntriesInteger).map((entry, key) => <BlogEntry key={key} {...entry} /> )}
+        </EntryContainer>
+        {currentEntriesInteger < entries.length &&
+          <LoadMore onClick={() => this.splitUpProducts()}>{buttonText}</LoadMore>}
       </Container>
     );
   }
 }
 
 Blog.defaultProps = {
-  entries: []
+  entries: [],
+  buttonText: "Load More"
 };
 
 Blog.propTypes = {

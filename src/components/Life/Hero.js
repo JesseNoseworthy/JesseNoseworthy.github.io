@@ -7,7 +7,7 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 65vh;
   width: 100vw;
   display: flex;
   justify-content: center;

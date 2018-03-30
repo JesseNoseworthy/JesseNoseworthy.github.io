@@ -4,7 +4,7 @@ import NavLinks from './NavLinks';
 import media from 'utils/media';
 import WithResponsive from 'utils/WithResponsive';
 
-const Container = styled.div`
+const Container = styled.header`
   background: ${props => props.theme.colors.fadedBlack};
   display: flex;
   justify-content: space-between;

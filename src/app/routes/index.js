@@ -1,5 +1,6 @@
 import About from "components/About";
 import Portfolio from "components/Portfolio";
+import Life from "components/Life";
 import data from "./data";
 
 const ROUTES = [
@@ -16,6 +17,13 @@ const ROUTES = [
     label: "What I've built",
     main: Portfolio,
     data: data.portfolio
+  },
+  {
+    id: "life",
+    path: "/life",
+    label: "My Life",
+    main: Life,
+    data: data.life
   },
 ];
 

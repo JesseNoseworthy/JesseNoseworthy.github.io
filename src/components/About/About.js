@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Social from './Social';
+import SocialLinks from 'components/SocialLinks';
 import media from 'utils/media';
 
 const Container = styled.div`
@@ -57,7 +57,7 @@ class About extends Component {
         <Content>
           {title && <Title>{title}</Title>}
           {description && <Description dangerouslySetInnerHTML={{ __html: description} }/>}
-          <Social links={socialLinks} />
+          <SocialLinks links={socialLinks} />
         </Content>
         {headshot &&
           <Headshot {...headshot} title={title} />

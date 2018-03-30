@@ -29,7 +29,7 @@ module.exports = {
         "title": "Talk: Selling React.js to clients",
         "image": reactImage,
         "description": "How 15 days in the Himalayas helped me shape a better project workflow model",
-        "href": "https://www.youtube.com/watch?v=hiN_b0Y2icQ",
+        "href": "https://www.youtube.com/watch?v=hiN_b0Y2icQ&feature=youtu.be&t=3m28s",
         "linkText": "Watch the Talk!"
       },
       {

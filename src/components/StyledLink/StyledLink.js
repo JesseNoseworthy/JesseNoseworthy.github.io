@@ -1,5 +1,4 @@
 import Link from 'components/Link'
-import media from 'utils/media';
 import styled from 'styled-components';
 
 const StyledLink = styled(Link)`

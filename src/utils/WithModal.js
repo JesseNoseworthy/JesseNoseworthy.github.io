@@ -52,7 +52,9 @@ class Modal extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.location.pathname !== this.props.location.pathname) {
-      this.toggleModal();
+      this.setState({
+        isOpen: false
+      })
     }
   }
 

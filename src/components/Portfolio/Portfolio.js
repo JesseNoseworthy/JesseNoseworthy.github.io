@@ -26,7 +26,6 @@ class Portfolio extends Component {
     } else {
       return items.map((item, key) => <PortfolioItem data={item} key={key} />)
     }
-
   }
 }
 

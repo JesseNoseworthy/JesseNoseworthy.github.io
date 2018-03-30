@@ -30,13 +30,12 @@ class Blog extends Component {
   constructor(props) {
     super(props);
     
-    this.splitUpProducts = this.splitUpProducts.bind(this);
-
     this.state = {
       currentEntriesInteger: 0,
       splitChunk: 4
     }
   }
+
   splitUpProducts() {
     const { splitChunk, currentEntriesInteger } = this.state;
 
@@ -67,10 +66,11 @@ class Blog extends Component {
 
 Blog.defaultProps = {
   entries: [],
-  buttonText: "Load More"
+  buttonText: "Load More",
 };
 
 Blog.propTypes = {
+  buttonText: PropTypes.string,
   entries:PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     image: PropTypes.string,

@@ -56,12 +56,15 @@ Life.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
   }),
-  blogContent:PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    image: PropTypes.string,
-    description: PropTypes.string,
-    link: PropTypes.string,
-  }))
+  blogContent: PropTypes.shape({
+    buttonText: PropTypes.string,
+    entries: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string,
+      image: PropTypes.string,
+      description: PropTypes.string,
+      link: PropTypes.string
+    }))
+  })
 };
 
 export default Life;

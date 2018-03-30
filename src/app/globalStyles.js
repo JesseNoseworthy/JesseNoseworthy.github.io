@@ -83,5 +83,4 @@ injectGlobal`
       url('../../media/MaterialIcons-Regular.woff') format('woff'),
       url('../../media/MaterialIcons-Regular.ttf') format('truetype');
   }
-
 `;

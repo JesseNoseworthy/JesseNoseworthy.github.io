@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Snapshot tests default state 1`] = `
-<div
-  className="Accordion__AccordionContainer-lhzlfC cTooy"
-/>
-`;

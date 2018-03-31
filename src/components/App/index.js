@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
-import theme from 'app/theme';
+import theme from 'theme';
 import Body from 'components/Body';
 
 class App extends Component {

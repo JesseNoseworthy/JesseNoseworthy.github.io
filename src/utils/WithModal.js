@@ -30,7 +30,7 @@ const ModalContent = styled.div`
   left: 0;
   top: 0;
   background: rgba(0,0,0,0.95);
-  padding: 50px 120px;
+  padding: 50px;
 `;
 
 class Modal extends Component {

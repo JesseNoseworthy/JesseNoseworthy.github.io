@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import BackgroundImage from 'components/BackgroundImage';
 import Link from 'components/Link';
 import media from 'utils/media';
 
@@ -8,6 +9,7 @@ const Entry = styled(Link)`
   display: flex;
   flex-direction: column;
   margin: 0 10px;
+  width: 100%;
   
   &:not(:last-child) {
     border-bottom: ${props => `1px solid ${props.theme.colors.border}`};
@@ -50,21 +52,15 @@ const Content = styled.div`
   height: calc(100% - 220px);
 `;
 
-const MockLink = styled.span``;
+const MockLink = styled.span`
+  color: ${props => props.theme.colors.primary};
+`;
 
 const EntryTitle = styled.h4`
   margin-top: 20px;
 `;
 
-const Image = styled.figure`
-  background-image: ${props => `url(${props.src})`};
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
-  height: 220px;
-`;
+const Image = styled(BackgroundImage)`height: 220px;`;
 
 const BlogEntry = ({ title, image, description, linkText, ...others }) => (
   <Entry {...others} target='_blank'>

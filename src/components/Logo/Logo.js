@@ -11,6 +11,6 @@ const Title = styled(RouterNavLink)`
   text-decoration: none;
 `;
 
-const Logo = () => <Title to={ROUTES[0].path}>JN.</Title>
+const Logo = () => <Title to={ROUTES[0].path} tabIndex={-1}>JN.</Title>
 
 export default Logo;

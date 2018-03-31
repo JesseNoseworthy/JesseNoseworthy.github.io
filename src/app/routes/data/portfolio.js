@@ -32,7 +32,7 @@ module.exports = {
         }
       ],
       "description": "A virtual car-building tool that allows users to build a vehicle, and calculator various pricing options.",
-      "skills": "React, Redux, Theming, Styled-Components, WebPack"
+      "skills": "React, Redux, Theming, Styled-Components, WebPack, Node Modules"
     },
     {
       "title": "Acura.ca Homepage",
@@ -44,7 +44,7 @@ module.exports = {
         }
       ],
       "description": "A single-page React application than includes a dynamic carousel, location-based data, and responsive components.",
-      "skills": "React, Sass"
+      "skills": "React, PostCSS"
     }
   ]
 }

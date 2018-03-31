@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PortfolioCard  from 'components/Portfolio/PortfolioCard';
+import BackgroundImage from 'components/BackgroundImage';
 import media from 'utils/media';
 
 const Container = styled.div`position: relative;`;
 
-const Asset = styled.div`
-  background-image: ${props => `url(${props.backgroundImage})`};
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+const Asset = styled(BackgroundImage)`
   height: ${props => `calc(100vh - ${props.theme.values.navBarHeight})`};
   width: 100vw;
 
@@ -24,7 +21,7 @@ class PortfolioItem extends Component {
 
     return (
       <Container>
-        <Asset backgroundImage={data.image} />
+        <Asset src={data.image} />
         <Content>
           <PortfolioCard {...data} />
         </Content>

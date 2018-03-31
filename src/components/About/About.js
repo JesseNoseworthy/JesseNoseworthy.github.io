@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import BackgroundImage from 'components/BackgroundImage';
 import SocialLinks from 'components/SocialLinks';
 import media from 'utils/media';
 
@@ -25,18 +26,12 @@ const Content = styled.div`
   `};
 `;
 
-const Headshot = styled.div`
-  background-image: ${props => `url(${props.mobileSrc})`};
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+const Headshot = styled(BackgroundImage)`
   height: 40vh;
   ${media.desktop`
     height: 100%;
     width: 50%;
     border-bottom: none;
-    background-image: ${props => `url(${props.desktopSrc})`};
   `};
 `;
 

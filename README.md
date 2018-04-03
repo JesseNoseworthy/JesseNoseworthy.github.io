@@ -2,9 +2,11 @@
 
 Welcome! This application is built using React, Router, and Styled-Components.
 
-- [ ] [System Requirements](https://github.com/JesseNoseworthy/react_portfolio#system-requirements)
-- [ ] [Getting Started](https://github.com/JesseNoseworthy/react_portfolio#getting-started)
-- [ ] [Yarn Cheatsheet](https://github.com/JesseNoseworthy/react_portfolio#yarn-cheatsheet)
+- [System requirements](https://github.com/JesseNoseworthy/react_portfolio#system-requirements)
+- [Getting started](https://github.com/JesseNoseworthy/react_portfolio#getting-started)
+- [Yarn cheatsheet](https://github.com/JesseNoseworthy/react_portfolio#yarn-cheatsheet)
+- [styled-components](https://github.com/JesseNoseworthy/react_portfolio#styled-components)
+- [Application data](https://github.com/JesseNoseworthy/react_portfolio#application-data)
 
 ### System Requirements
 
@@ -45,7 +47,11 @@ For a quick guide on some of the differences between `yarn` and `npm`, check out
 
 ### Styled-Components
 
-This application makes use of [Styled-Components](https://github.com/styled-components/styled-components). It will be very common to see syntax such as:
+This application makes use of [Styled-Components](https://github.com/styled-components/styled-components). 
+
+We declare global styles for the application [here](https://github.com/JesseNoseworthy/react_portfolio/blob/master/src/app/globalStyles.js).
+
+It will be very common to see syntax such as:
 
 ```
 <Container>
@@ -87,3 +93,7 @@ const Container = styled.button`
 ```
 
 You can learn more about _styled-components_ within their [official documentation](https://www.styled-components.com).
+
+### Application Data
+
+Currently all data for the application is stored in alignment with each Route it will fall under, [`app/routes/data`](https://github.com/JesseNoseworthy/react_portfolio/tree/master/src/app/routes/data)

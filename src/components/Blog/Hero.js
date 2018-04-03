@@ -2,12 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import media from 'utils/media';
+import BackgroundImage from 'components/BackgroundImage';
 
-const Container = styled.div`
-  background-image: ${props => `url(${props.image}})`};
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+const Container = styled(BackgroundImage)`
   height: 65vh;
   width: 100vw;
   display: flex;
@@ -32,8 +29,8 @@ const Title = styled.h1`
   `};
 `;
 
-const Hero = ({ title, ...others }) => (
-  <Container {...others}>
+const Hero = ({ title, image, ...others }) => (
+  <Container src={image} {...others}>
     {title && <Title>{title}</Title>}
   </Container>
 );

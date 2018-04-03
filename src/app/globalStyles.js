@@ -25,6 +25,10 @@ injectGlobal`
     color: rgb(51, 51, 51);
   }
 
+  figure {
+    margin: 0;
+  }
+
   p,
   li,
   a {

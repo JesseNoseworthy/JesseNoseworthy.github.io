@@ -6,7 +6,6 @@ Welcome! This application is built using React, Router, and Styled-Components.
 - [Getting started](https://github.com/JesseNoseworthy/react_portfolio#getting-started)
 - [Yarn cheatsheet](https://github.com/JesseNoseworthy/react_portfolio#yarn-cheatsheet)
 - [styled-components](https://github.com/JesseNoseworthy/react_portfolio#styled-components)
-- [Application data](https://github.com/JesseNoseworthy/react_portfolio#application-data)
 
 ### System Requirements
 
@@ -93,7 +92,3 @@ const Container = styled.button`
 ```
 
 You can learn more about _styled-components_ within their [official documentation](https://www.styled-components.com).
-
-### Application Data
-
-Currently all data for the application is stored in alignment with each Route it will fall under, [`app/routes/data`](https://github.com/JesseNoseworthy/react_portfolio/tree/master/src/app/routes/data)

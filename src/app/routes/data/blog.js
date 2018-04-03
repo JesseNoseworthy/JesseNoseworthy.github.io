@@ -1,3 +1,4 @@
+import heroImage from 'assets/images/blog/hero.jpg';
 import everestTeamImage from 'assets/images/blog/everest-team.jpg';
 import reactImage from 'assets/images/blog/react.jpg';
 import podcastImage from 'assets/images/blog/podcast.jpg';
@@ -8,7 +9,7 @@ import hockeyImage from 'assets/images/blog/hockey.jpg';
 
 module.exports = {
   "hero": {
-    "image": "https://scontent.fybz2-1.fna.fbcdn.net/v/t31.0-8/25734213_10159755081180608_879753776624599351_o.jpg?_nc_cat=0&oh=ed90667f616a345e0b6cc2bde0ee1da7&oe=5B6D8F41&efg=eyJhZG1pc3Npb25fY29udHJvbCI6MCwidXBsb2FkZXJfaWQiOiI3MDM4MzU2MDcifQ%3D%3D",
+    "image": heroImage,
     "title": "My Life"
   },
   "intro": {

@@ -26,7 +26,7 @@ const EntryContainer = styled.div`
 
 const LoadMore = styled(StyledButton)`margin-top: 20px;`;
 
-class Blog extends Component {
+class BlogSection extends Component {
   constructor(props) {
     super(props);
     
@@ -64,12 +64,12 @@ class Blog extends Component {
   }
 }
 
-Blog.defaultProps = {
+BlogSection.defaultProps = {
   entries: [],
   buttonText: "Load More",
 };
 
-Blog.propTypes = {
+BlogSection.propTypes = {
   buttonText: PropTypes.string,
   entries:PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
@@ -79,4 +79,4 @@ Blog.propTypes = {
   }))
 };
 
-export default Blog;
+export default BlogSection;

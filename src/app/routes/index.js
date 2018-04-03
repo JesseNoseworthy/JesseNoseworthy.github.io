@@ -1,6 +1,6 @@
 import About from "components/About";
 import Portfolio from "components/Portfolio";
-import Life from "components/Life";
+import Blog from "components/Blog";
 import data from "./data";
 
 const ROUTES = [
@@ -19,11 +19,11 @@ const ROUTES = [
     data: data.portfolio
   },
   {
-    id: "life",
-    path: "/life",
+    id: "blog",
+    path: "/blog",
     label: "My Life",
-    main: Life,
-    data: data.life
+    main: Blog,
+    data: data.blog
   },
 ];
 

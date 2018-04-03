@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Hero from './Hero';
-import Blog from './Blog';
+import BlogSection from './BlogSection';
 import media from 'utils/media';
 
 const Container = styled.div``;
@@ -26,7 +26,7 @@ const IntroTitle = styled.h3`text-align: center;`;
 
 const IntroDescription = styled.p`text-align: center;`;
 
-class Life extends Component {
+class Blog extends Component {
   render() {
     const { hero, intro, blogContent } = this.props;
 
@@ -38,16 +38,16 @@ class Life extends Component {
             <IntroTitle>{intro.title}</IntroTitle>
             <IntroDescription>{intro.description}</IntroDescription>
           </Intro>
-          <Blog {...blogContent} />
+          <BlogSection {...blogContent} />
         </Content>
       </Container>
     );
   }
 }
 
-Life.defaultProps = {};
+Blog.defaultProps = {};
 
-Life.propTypes = {
+Blog.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     image: PropTypes.string,
@@ -67,4 +67,4 @@ Life.propTypes = {
   })
 };
 
-export default Life;
+export default Blog;

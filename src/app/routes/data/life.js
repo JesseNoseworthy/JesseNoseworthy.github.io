@@ -9,11 +9,11 @@ import hockeyImage from 'assets/images/blog/hockey.jpg';
 module.exports = {
   "hero": {
     "image": "https://scontent.fybz2-1.fna.fbcdn.net/v/t31.0-8/25734213_10159755081180608_879753776624599351_o.jpg?_nc_cat=0&oh=ed90667f616a345e0b6cc2bde0ee1da7&oe=5B6D8F41&efg=eyJhZG1pc3Npb25fY29udHJvbCI6MCwidXBsb2FkZXJfaWQiOiI3MDM4MzU2MDcifQ%3D%3D",
-    "title": "Living life to the fullest"
+    "title": "My Life"
   },
   "intro": {
     "title": "Hi! I'm Jesse!",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam minima illum, id cum numquam explicabo vero, dignissimos ad nam facilis architecto repudiandae minus a, eveniet repellat. Ullam, pariatur recusandae."
+    "description": "Thanks for stopping by; it's nice to digitally meet you. Life is a crazy ride, and I'm trying to seize every last moment I can! Here you'll find what I've been up to recently."
   },
   "blogContent": {
     "buttonText": "See More",
@@ -21,49 +21,49 @@ module.exports = {
       {
         "title": "A Developers Journey to Everest Base Camp",
         "image": everestBlogImage,
-        "description": "How 15 days in the Himalayas helped me shape a better project workflow model",
+        "description": "How 15 days in the Himalayas helped me shape a better project workflow model.",
         "href": "https://medium.com/@JesseNoseworthy/a-developers-journey-to-everest-base-camp-c48b3b6bd0f5",
         "linkText": "Read More"
       },
       {
         "title": "Talk: Selling React.js to clients",
         "image": reactImage,
-        "description": "How 15 days in the Himalayas helped me shape a better project workflow model",
+        "description": "A recent talk I did on how business units can better market React to clients as a sustainable technology.",
         "href": "https://www.youtube.com/watch?v=hiN_b0Y2icQ&feature=youtu.be&t=3m28s",
         "linkText": "Watch the Talk!"
       },
       {
         "title": "Guest Podcaster",
         "image": podcastImage,
-        "description": "What a fantastic time! Thanks for having me 'Shut Up, Nobody Cares!'. We ended up chatting about  New Years Resolutions, why Instagram and I don't get along, and how I became a professional developer.",
+        "description": "What a fantastic time! Thanks for having me 'Shut Up, Nobody Cares'. We ended up chatting about  New Years Resolutions, why Instagram and I don't get along, and how I became a professional developer.",
         "href": "https://soundcloud.com/shutupnobodycares/episode-12-im-sorry-ill-get-a-job-ft-jesse?in=shutupnobodycares%2Fsets%2Fshut-up-nobody-cares&utm_source=soundcloud&utm_campaign=share&utm_medium=facebook",
         "linkText": "Listen!"
       },
       {
         "title": "Everest Base Camp Trek",
         "image": everestTeamImage,
-        "description": "How 15 days in the Himalayas helped me shape a better project workflow model",
+        "description": "A quick compilation of some footage from my recent trek to Mount Everest Base Camp.",
         "href": "https://www.youtube.com/watch?v=fp2d5F-_dGg",
         "linkText": "Watch the Video!"
       },
       {
         "title": "A Weekend in Havana",
         "image": cubaImage,
-        "description": "How 15 days in the Himalayas helped me shape a better project workflow model",
+        "description": "Havana is an incredibly gorgeous city, and I just couldn't help but film some of it.",
         "href": "https://www.youtube.com/watch?v=4-CT79Pee7o",
         "linkText": "Watch the Video!"
       },
       {
-        "title": "Another Beautiful Day at the Dog Park",
+        "title": "A Day at the Dog Park",
         "image": dogParkImage,
-        "description": "How 15 days in the Himalayas helped me shape a better project workflow model",
+        "description": "There's no better way to welcome Spring than with a trip to the local dog park :)",
         "href": "https://www.youtube.com/watch?v=MWnJNnjBVZk",
         "linkText": "Watch the Video!"
       },
       {
         "title": "Tylers return to the rink",
         "image": hockeyImage,
-        "description": "How 15 days in the Himalayas helped me shape a better project workflow model",
+        "description": "Dislciamer: I suck at hockey. Alright, you've been warned. This is me trying to break in my new GoPro",
         "href": "https://www.youtube.com/watch?v=0nw7urOMGxc",
         "linkText": "Watch the Video!"
       },

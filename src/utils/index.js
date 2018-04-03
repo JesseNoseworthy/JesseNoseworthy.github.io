@@ -38,5 +38,5 @@ export function isTablet() {
 }
 
 export function isDesktop() {
-  return getWindowWidth() >= 1200 && getWindowWidth() < 1920
+  return getWindowWidth() >= 1200
 }

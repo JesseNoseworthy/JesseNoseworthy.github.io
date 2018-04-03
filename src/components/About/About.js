@@ -36,12 +36,25 @@ const Headshot = styled(BackgroundImage)`
 `;
 
 const Title = styled.h1`
+  font-size: 2.6rem;
   color: ${props => props.theme.colors.primary};
 
-  ${media.mobile`font-size: 2.6rem;`};
 `;
 
-const Description = styled.p``;
+const Description = styled.p`
+  ${media.desktop`width: 70%`};
+
+  a {
+    color: ${props => props.theme.colors.primary};
+    text-decoration: none;
+  }
+`;
+
+const Social = styled(SocialLinks)`
+  justify-content: flex-start;
+  border-top: ${props => `1px solid ${props.theme.colors.border}`};
+  ${media.desktop`width: 70%`};
+`;
 
 class About extends Component {
   render() {
@@ -52,7 +65,7 @@ class About extends Component {
         <Content>
           {title && <Title>{title}</Title>}
           {description && <Description dangerouslySetInnerHTML={{ __html: description} }/>}
-          <SocialLinks links={socialLinks} />
+          <Social links={socialLinks} />
         </Content>
         {headshot &&
           <Headshot {...headshot} title={title} />

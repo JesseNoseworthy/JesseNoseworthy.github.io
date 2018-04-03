@@ -24,7 +24,7 @@ const Content = styled.div`
 
 const IntroTitle = styled.h3`text-align: center;`;
 
-const IntroDescription = styled.p``;
+const IntroDescription = styled.p`text-align: center;`;
 
 class Life extends Component {
   render() {

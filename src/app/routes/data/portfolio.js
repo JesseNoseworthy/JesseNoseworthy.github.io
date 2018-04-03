@@ -11,11 +11,11 @@ module.exports = {
       "image": canonImage,
       "demo": [
         {
-          "title": "See More",
+          "title": "Demo",
           "href": "http://www.canon.ca"
         }
       ],
-      "description": "modules to be rendered dynamically across pages. This application also gives the admin complete control over the look and feel of their modules, including dynamic themes per business segment.",
+      "description": "A theme-based application that provides the administrator with 35+ dynamic and reusable React modules, enabling control over placement, orientation, content, and theming. The real power behind this application is its UI and flexibility.",
       "skills": "React, Theming, Sass, WebPack"
     },
     {
@@ -31,15 +31,15 @@ module.exports = {
           "href": "http://www.honda.ca/buildyourhonda"
         }
       ],
-      "description": "A virtual car-building tool that allows users to build a vehicle, and calculator various pricing options.",
-      "skills": "React, Redux, Theming, Styled-Components, WebPack, Node Modules"
+      "description": "This Redux application provides the user with a seamless experience, as they build and price a virtual vehicle. This application excels when it comes its dynamic build-based content and robust calculator.",
+      "skills": "React, Redux, Router, Theming, WebPack, Node Modules, Styled-Components"
     },
     {
       "title": "Acura.ca Homepage",
       "image": acuraImage,
       "demo": [
         {
-          "title": "See More",
+          "title": "Demo",
           "href": "http://www.acura.ca"
         }
       ],

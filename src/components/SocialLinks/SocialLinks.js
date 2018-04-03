@@ -21,8 +21,8 @@ const SocialLink = styled(Link)`
   }
 `
 
-const Social = ({ links }) => (
-  <Container>
+const Social = ({ links, className }) => (
+  <Container className={className}>
     {links.map((link, key) =>
       <SocialLink href={link.href} key={key} target="_blank">
         {link.title}

@@ -26,9 +26,10 @@ injectGlobal`
   }
 
   p,
-  li {
-    font-weight: 300;
-    font-size: 1rem;
+  li,
+  a {
+    font-weight: 400;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
 

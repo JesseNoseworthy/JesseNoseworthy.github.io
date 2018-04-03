@@ -16,6 +16,7 @@ const Container = styled.div`
   ${media.desktop`
     flex-direction: row;
     padding: 40px 50px;
+    height: 250px;
   `};
 
   * {
@@ -31,6 +32,19 @@ const Title = styled.h5`
   ${media.desktop`font-size: 2.8rem;`};
 `;
 
+const DemoLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 15px;
+  height: 70%;
+  ${media.desktop`
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+  `};
+`;
+
 const DemoLink = styled(StyledLink)`
   margin-bottom: 10px;
   text-align: center;
@@ -43,8 +57,8 @@ const DemoLink = styled(StyledLink)`
 
 const Description = styled.p`
   width: 100%;
-  font-size: 1.2em;
-  line-height: 1.4rem;
+  font-size: 1.3em;
+  line-height: 2rem;
   display: none;
 
   ${media.desktop`display: block;`};
@@ -54,18 +68,6 @@ const Skills = styled.span`
   text-transform: uppercase;
   font-size: 0.9rem;
   ${media.desktop`font-size: 0.8rem;`};
-`;
-
-const DemoLinks = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 15px;
-  ${media.desktop`
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 7px 0;
-  `};
 `;
 
 const Content = styled.div`padding-right: 30px;`;

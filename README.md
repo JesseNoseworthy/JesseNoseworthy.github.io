@@ -1,6 +1,10 @@
-# Getting Started
+# React Portfolio :rocket:
 
-WORK IN PROGRESS
+Welcome! This application is built using React, Router, and Styled-Components.
+
+- [ ] [System Requirements](https://github.com/JesseNoseworthy/react_portfolio#system-requirements)
+- [ ] [Getting Started](https://github.com/JesseNoseworthy/react_portfolio#getting-started)
+- [ ] [Yarn Cheatsheet](https://github.com/JesseNoseworthy/react_portfolio#yarn-cheatsheet)
 
 ### System Requirements
 
@@ -38,3 +42,48 @@ For a quick guide on some of the differences between `yarn` and `npm`, check out
 - You can run `yarn` or `yarn install` and get the same result
 - With Yarn, packages are saved to the `package.json` automatically. That's awesome, right?
 - For more info on `npm` versus `yarn`, check out [this article](https://scotch.io/tutorials/yarn-package-manager-an-improvement-over-npm).
+
+### Styled-Components
+
+This application makes use of [Styled-Components](https://github.com/styled-components/styled-components). It will be very common to see syntax such as:
+
+```
+<Container>
+  <Title>This is a title</Title>
+</Container>
+``` 
+
+These components are _Styled Components_. Here is an example of how we would declare them:
+
+```
+import styled from 'styled-components';
+
+const Container = styled.button`
+  display: flex;
+`;
+
+const Title = styled.button``;
+
+```
+
+This will also enable for us to make use of prop-based styling, or to better access the applications theme:
+
+```
+const Container = styled.button`
+  color: ${props => props.isActive ? props.theme.colors.primary : props.theme.colors.white};
+`;
+
+```
+
+Here are our media queries:
+
+```
+const Container = styled.button`
+  ${media.desktop`
+     color: blue;
+  `};
+`;
+
+```
+
+You can learn more about _styled-components_ within their [official documentation](https://www.styled-components.com).

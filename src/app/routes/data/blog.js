@@ -57,14 +57,14 @@ module.exports = {
       {
         "title": "A Day at the Dog Park",
         "image": dogParkImage,
-        "description": "There's no better way to welcome Spring than with a trip to the local dog park :)",
+        "description": "There's no better way to welcome Spring than with a trip to the local dog park :).",
         "href": "https://www.youtube.com/watch?v=MWnJNnjBVZk",
         "linkText": "Watch the Video!"
       },
       {
         "title": "Tylers return to the rink",
         "image": hockeyImage,
-        "description": "Dislciamer: I suck at hockey. Alright, you've been warned. This is me trying to break in my new GoPro",
+        "description": "Dislciamer: I suck at hockey. Alright, you've been warned. This is me trying to break in my new GoPro.",
         "href": "https://www.youtube.com/watch?v=0nw7urOMGxc",
         "linkText": "Watch the Video!"
       },

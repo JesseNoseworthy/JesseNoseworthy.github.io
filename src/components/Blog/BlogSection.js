@@ -16,11 +16,11 @@ const EntryContainer = styled.div`
   flex-wrap: wrap;
   margin-top: 40px;
   padding-top: 40px;
-  border-top: ${props => `1px solid ${props.theme.colors.border}`};
 
   ${media.desktop`
     margin-top: 100px;
     padding-top: 100px;
+    border-top: ${props => `1px solid ${props.theme.colors.border}`};
   `};
 `;
 

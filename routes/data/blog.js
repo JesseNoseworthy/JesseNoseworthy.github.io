@@ -36,7 +36,7 @@ module.exports = {
       {
         "title": "Guest Podcaster",
         "image": podcastImage,
-        "description": "What a fantastic time! Thanks for having me 'Shut Up, Nobody Cares'. We ended up chatting about  New Years Resolutions, why Instagram and I don't get along, and how I became a professional developer.",
+        "description": "What a fantastic time! Thanks for having me 'Shut Up, Nobody Cares'. We ended up chatting about  New Years Resolutions, why Instagram and I don't get along, and how I became a developer.",
         "href": "https://soundcloud.com/shutupnobodycares/episode-12-im-sorry-ill-get-a-job-ft-jesse?in=shutupnobodycares%2Fsets%2Fshut-up-nobody-cares&utm_source=soundcloud&utm_campaign=share&utm_medium=facebook",
         "linkText": "Listen!"
       },
